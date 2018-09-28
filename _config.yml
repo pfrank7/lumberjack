@@ -11,13 +11,13 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title :  "XGBoost"
+title :  "Lumberjack"
 tagline:
 author :
   name :
 
 #
-production_url : https://xgboost.ai
+#production_url : https://xgboost.ai
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
@@ -25,8 +25,8 @@ production_url : https://xgboost.ai
 JB :
   version : 0.3.0
 
-  BASE_PATH : https://xgboost.ai
-  BLOG_PATH : https://xgboost.ai
+ # BASE_PATH : https://xgboost.ai
+ # BLOG_PATH : https://xgboost.ai
 
-  sharing :
-    provider : false
+ # sharing :
+ #   provider : false
