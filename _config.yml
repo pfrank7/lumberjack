@@ -1,32 +1,32 @@
 # This is the default format.
 # For more see: http://jekyllrb.com/docs/permalinks/
-#permalink: /:categories/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title
 
-#exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 
-#highlighter: rouge
-#markdown: kramdown
+highlighter: rouge
+markdown: kramdown
 
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
 title :  "Lumberjack"
-#tagline:
-#author :
-#  name :
+tagline:
+author :
+  name :
 
 #
-#production_url : https://pfrank7.github.io/lumberjack.ai
+production_url : https://pfrank7.github.io/lumberjack
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
-#JB :
- # version : 0.3.0
+JB :
+  version : 0.3.0
 
- # BASE_PATH : https://xgboost.ai
- # BLOG_PATH : https://xgboost.ai
+  BASE_PATH : https://pfrank7.github.io/lumberjack
+  BLOG_PATH : https://pfrank7.github.io/lumberjack
 
- # sharing :
- #   provider : false
+  sharing :
+    provider : false
