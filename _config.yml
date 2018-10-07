@@ -27,7 +27,6 @@ JB :
 
   BASE_PATH : https://pfrank7.github.io/lumberjack
   BLOG_PATH : https://pfrank7.github.io/lumberjack
-  ASSET_PATH : https://pfrank7.github.io/lumberjack/assets/themes/custom-twitter
 
   sharing :
     provider : false
