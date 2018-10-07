@@ -11,14 +11,14 @@ description: "Lumberjack Community"
 
 # Community
 
-THING ONE.
+Welcome to the Lumberjack community.
 
 <br>
 
 
 ## Discuss Forum
 
-THING TWO.
+A discussion forum for Lumberjack related topics is in the works!
 
 <a href="discuss.html" class="link-btn">Discuss Forum</a>
 
@@ -26,7 +26,7 @@ THING TWO.
 
 ## Roadmap
 
-THING THREE
+Check out the public roadmap to see where Lumberjack is headed. Please reach out if you are interested in working on anything not on the roadmap. 
 
 <a href="https://github.com/neurodata/lumberjack/projects/3" class="link-btn">Public Roadmap</a>
 
@@ -34,7 +34,7 @@ THING THREE
 
 
 ## Github Issues
-THING 4.
+Lumberjack uses Github issues to track bugs and roadmap discussion.
 
 <a href="https://github.com/neurodata/lumberjack/issues" class="link-btn">Github Issue Tracker</a>
 
@@ -42,7 +42,7 @@ THING 4.
 
 
 ## Contributing
-THING 5
+Interested in joining the Lumberjack team? Review the contibuting guidelines here. 
 
 <a href="https://github.com/neurodata/lumberjack/blob/staging/CONTRIBUTING.md" class="link-btn">Lumberjack Contributor Guideline</a>
 
