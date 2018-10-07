@@ -12,7 +12,7 @@
       {% assign HOME_PATH = site.JB.BASE_PATH %}
       {% assign BLOG_PATH = site.JB.BLOG_PATH %}
     {% else %}
-       {% assign BASE_PATH = nil %}
+       {% assign BASE_PATH = '/lumberjack' %}
        {% assign HOME_PATH = '' %}
        {% assign BLOG_PATH = '' %}
     {% endif %}
