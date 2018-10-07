@@ -20,7 +20,7 @@ THING ONE.
 
 THING TWO.
 
-<a href="https://discuss.xgboost.ai" class="link-btn">Discuss Forum</a>
+<a href="discuss.html" class="link-btn">Discuss Forum</a>
 
 <br>
 
@@ -28,7 +28,7 @@ THING TWO.
 
 THING THREE
 
-<a href="https://github.com/dmlc/xgboost/projects/2" class="link-btn">Public Roadmap</a>
+<a href="https://github.com/neurodata/lumberjack/projects/3" class="link-btn">Public Roadmap</a>
 
 <br>
 
@@ -36,7 +36,7 @@ THING THREE
 ## Github Issues
 THING 4.
 
-<a href="https://github.com/dmlc/xgboost/issues/" class="link-btn">Github Issue Tracker</a>
+<a href="https://github.com/neurodata/lumberjack/issues" class="link-btn">Github Issue Tracker</a>
 
 <br>
 
@@ -44,12 +44,12 @@ THING 4.
 ## Contributing
 THING 5
 
-<a href="https://github.com/dmlc/xgboost/blob/master/doc/contribute.rst" class="link-btn">XGBoost Contributor Guideline</a>
+<a href="https://github.com/neurodata/lumberjack/blob/staging/CONTRIBUTING.md" class="link-btn">Lumberjack Contributor Guideline</a>
 
 <br>
 
 ## Twitter
 
-<a href="https://twitter.com/XGBoostProject?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @XGBoostProject</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/neuro_data" class="twitter-follow-button" data-show-count="false">Follow @neuro_data</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<a class="twitter-timeline" width="500" height="700" href="https://twitter.com/XGBoostProject?ref_src=twsrc%5Etfw">Tweets by XGBoostProject</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" width="500" height="700" href="https://twitter.com/neuro_data">Tweets by Neuro Data</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
