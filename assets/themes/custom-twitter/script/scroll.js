@@ -1,4 +1,4 @@
-window.onscroll = function() {myFunction()};
+/*window.onscroll = function() {myFunction()};
 
 function myFunction() {
 	x = document.getElementById("fade");
@@ -9,7 +9,7 @@ function myFunction() {
         x.className = "fade";
     }
 }
-/*window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
 function myFunction() {
     x = document.getElementsByClassName("fade");
