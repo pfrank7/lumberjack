@@ -436,7 +436,7 @@ body {
 }
 .fade {
   opacity: .5;
-  transition: 1s;
+  transition: opacity 1s;
 }
 .fade-visible { 
   opacity: 1;
