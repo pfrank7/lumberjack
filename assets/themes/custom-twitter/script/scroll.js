@@ -3,10 +3,10 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
 	x = document.getElementById("fade");
     if (x.scrollTop < 10) {
-    	x.className = "fade";
+    	x.className = "fade-visible";
     }
     if (document.documentElement.scrollTop == 0) {
-        x.className = "fade-visible";
+        x.className = "fade";
     }
 }
 /*window.onscroll = function() {myFunction()};
