@@ -2,7 +2,7 @@ window.onscroll = function() {myFunction()};
 
 function myFunction() {
 	x = document.getElementById("fade");
-    if (document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 100) {
     	x.className = "fade-visible";
     }
     if (document.documentElement.scrollTop == 0) {
