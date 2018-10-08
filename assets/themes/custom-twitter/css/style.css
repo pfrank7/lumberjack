@@ -422,10 +422,10 @@ body {
 .section-tout{
   padding:3em 0 3em;
   border-bottom:1px solid rgba(0,0,0,.05);
-  background-color: #eaf1f1
+  background-color: #eaf1f1;
 }
 .section-tout .fa{
-  margin-right:.5em
+  margin-right:.5em;
 }
 
 .section-tout h3{
@@ -433,7 +433,7 @@ body {
 }
 
 .section-tout p {
-  margin-bottom:2em
+  margin-bottom:2em;
 }
 
 .github-btn { border: 0; overflow: hidden }
