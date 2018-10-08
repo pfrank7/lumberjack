@@ -432,7 +432,8 @@ body {
 }
 
 .section-tout p {
-  margin-bottom:2em
+  margin-bottom:2em;
+  text-align:center;
 }
 .fade {
   opacity: .5;
