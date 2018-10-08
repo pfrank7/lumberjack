@@ -435,11 +435,11 @@ body {
 .section-tout p {
   margin-bottom:2em
 }
-section {
+.fade {
   opacity: 0;
-  transition: opacity .5s;
+  transition: opacity 1s;
 }
-section.visible { 
+.fade-visible { 
   opacity: 1;
 }
 
