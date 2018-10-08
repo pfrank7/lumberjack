@@ -438,7 +438,7 @@ body {
   opacity: .5;
   transition: opacity 1s;
 }
-.fade-visible { 
+.fade:hover { 
   opacity: 1;
 }
 
