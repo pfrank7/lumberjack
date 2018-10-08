@@ -435,13 +435,6 @@ body {
 .section-tout p {
   margin-bottom:2em
 }
-section {
-  opacity: 0;
-  transition: opacity .5s;
-}
-section.visible { 
-  opacity: 1;
-}
 
 .github-btn { border: 0; overflow: hidden }
 
