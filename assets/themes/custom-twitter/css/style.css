@@ -23,6 +23,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  height: 100vh;
   background-image:
      linear-gradient(175deg, #7275F9, #333333);
 }
@@ -420,11 +421,6 @@ body {
 .section-tout{
   padding:3em 0 3em;
   border-bottom:1px solid rgba(0,0,0,.05);
-  background-color: #eaf1f1;
-}
-.section-tout{
-  padding:3em 0 3em;
-  border-bottom:1px solid rgba(0,0,0,.05);
   background-color:#eaf1f1
 }
 .section-tout .fa{
@@ -437,6 +433,13 @@ body {
 
 .section-tout p {
   margin-bottom:2em
+}
+section {
+  opacity: 0;
+  transition: opacity .5s;
+}
+section.visible { 
+  opacity: 1;
 }
 
 .github-btn { border: 0; overflow: hidden }
