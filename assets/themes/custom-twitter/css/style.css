@@ -436,8 +436,8 @@ body {
   text-align:center;
 }
 .fade {
-  opacity: .5;
-  transition: opacity 1s;
+  opacity: .3;
+  transition: opacity .3s;
 }
 .fade:hover { 
   opacity: 1;
