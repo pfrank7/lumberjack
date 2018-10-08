@@ -1,14 +1,25 @@
-$(document).on("scroll", function () {
-  var pageTop = $(document).scrollTop()
-  var pageBottom = pageTop + $(window).height()
-  var tags = $(document).getElementsByClassName("fade");
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
 
-  for (var i = 0; i < tags.length; i++) {
-    var tag = tags[i]
+function myFunction() {
+	x = document.getElementById("fade");
+    if (x.scrollTop < 10) {
+    	x.className = "fade";
+    }
+    if (document.documentElement.scrollTop == 0) {
+        x.className = "fade-visible";
+    }
+}
+</script>
+/*window.onscroll = function() {myFunction()};
 
-    if ($(tag).position().top < pageBottom) { 
-      $(tag).css("opacity", 1);
+function myFunction() {
+    x = document.getElementsByClassName("fade");
+    for (i = 0; i < x.length; i++) {
+      if (x[i].scrollTop > 50) {
+        x[i].className = "fade-visible";
     } else {
-      $(tag).css("opacity", .5);
-  }
-})
+        x[i].className = "fade";
+    }
+}
+</script>*/
