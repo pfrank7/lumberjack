@@ -1,4 +1,3 @@
-<script type="text/javascript">
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -10,7 +9,6 @@ function myFunction() {
         x.className = "fade-visible";
     }
 }
-</script>
 /*window.onscroll = function() {myFunction()};
 
 function myFunction() {
