@@ -7,8 +7,8 @@ $(document).on("scroll", function () {
     var tag = tags[i]
 
     if ($(tag).position().top < pageBottom) { 
-      $(tag).addClass("fade-visible")
+      $(tag).css("opacity", 1);
     } else {
-      $(tag).removeClass("fade-visible")
+      $(tag).css("opacity", .5);
   }
 })
