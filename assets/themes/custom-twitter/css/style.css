@@ -435,14 +435,6 @@ body {
 .section-tout p {
   margin-bottom:2em;
 }
-.fade {
-  opacity: .3;
-  transition: opacity .3s;
-}
-.fade:hover { 
-  opacity: 1;
-}
-
 .github-btn { border: 0; overflow: hidden }
 
 @media (min-width: 768px) {
