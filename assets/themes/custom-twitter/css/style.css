@@ -417,11 +417,13 @@ body {
 .highlight {
   background-color: #f8f8f8;
 }
+/* COMMENTING OUT SECTION TOUT STUFF */
 
+/*
 .section-tout{
   padding:3em 0 3em;
   border-bottom:1px solid rgba(0,0,0,.05);
-  /*background-color:#eaf1f1;*/
+  background-color:#eaf1f1;
   text-align:center;
 }
 .section-tout .fa{
@@ -435,6 +437,7 @@ body {
 .section-tout p {
   margin-bottom:2em;
 }
+*/
 .github-btn { border: 0; overflow: hidden }
 
 @media (min-width: 768px) {
@@ -460,6 +463,8 @@ body {
   margin-left: -15px;
 }
 
+/* COMMENTING OUT COLUMN FORMATTING */
+/*
 .col-lg-4, .col-sm-6 {
   position: relative;
   min-height: 1px;
@@ -480,18 +485,13 @@ body {
     width: 33.33333333%;
   }
 }
-
+*/
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 /* ************ ALL THE CODE FOR THE TIMELINE *************** */
-
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
