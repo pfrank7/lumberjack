@@ -564,7 +564,7 @@ body {
 	height: 50vh;
 	text-align: center;
 }	
-.empty::before {
+.empty::after {
 	margin-top: 50vh;
 	text-align: center;
 	content: "^";
