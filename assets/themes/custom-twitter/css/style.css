@@ -560,7 +560,15 @@ body {
 .right {
     left: 50%;
 }
-
+.empty {
+	height: 100vh;
+	text-align: center;
+}	
+.empty::before {
+	height: 100vh;
+	text-align: center;
+	content: "^";
+}
 /* Add arrows to the left container (pointing right) */
 .left::before {
     content: " ";
