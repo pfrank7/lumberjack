@@ -473,14 +473,14 @@ body {
 @media (min-width: 768px) {
   .col-sm-4 {
     float: left;
-    width: 40%;
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .col-lg-4 {
     float: left;
-    width: 33.33333333%;
+    width: 40%;
   }
 }
 
@@ -494,14 +494,14 @@ body {
 @media (min-width: 768px) {
   .col-sm-8 {
     float: right;
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
   .col-lg-8 {
     float: right;
-    width: 77.66666666%;
+    width: 60%;
   }
 }
 * {
