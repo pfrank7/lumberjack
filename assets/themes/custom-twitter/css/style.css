@@ -173,6 +173,10 @@ body {
 .topbar div>ul .active>a, .nav .active>a {
    background-color: rgb(42, 42, 42);
 }
+.nav>li>a{display:block;}
+.nav>li>a:hover{text-decoration:none;background-color:#eeeeee;}
+.nav>li>a>img{max-width:none;}
+.nav>.pull-right{float:right;}
 
 /* tag_box ======================================================== */
 
