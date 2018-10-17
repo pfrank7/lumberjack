@@ -134,7 +134,7 @@ body {
    font-size:28px;
 }
 
-/* navigation, topbar */
+/* navigation, topbar
 
 #logo-wrap {
    float: left;
@@ -155,6 +155,22 @@ body {
   margin-right:15px;
 }
 
+.topbar .btn {
+  border: 0px;
+}
+*/
+/* active color use default 
+.topbar div>ul .active>a, .nav .active>a {
+   background-color: rgb(42, 42, 42);
+}
+.nav>li>a{display:block;}
+.nav>li>a:hover{text-decoration:none;background-color:#eeeeee;}
+.nav>li>a>img{max-width:none;}
+.nav>.pull-right{float:right;}
+.nav{margin-left:0;margin-bottom:20px;list-style:none;}
+*/
+
+
 /* blog */
 .bloglist ul {
   margin-top: 10px;
@@ -164,20 +180,6 @@ body {
   margin-top: 4px;
   margin-bottom: 25px;
 }
-
-.topbar .btn {
-  border: 0px;
-}
-
-/* active color use default */
-.topbar div>ul .active>a, .nav .active>a {
-   background-color: rgb(42, 42, 42);
-}
-.nav>li>a{display:block;}
-.nav>li>a:hover{text-decoration:none;background-color:#eeeeee;}
-.nav>li>a>img{max-width:none;}
-.nav>.pull-right{float:right;}
-.nav{margin-left:0;margin-bottom:20px;list-style:none;}
 
 /* tag_box ======================================================== */
 
