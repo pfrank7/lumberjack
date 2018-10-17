@@ -177,6 +177,7 @@ body {
 .nav>li>a:hover{text-decoration:none;background-color:#eeeeee;}
 .nav>li>a>img{max-width:none;}
 .nav>.pull-right{float:right;}
+.nav{margin-left:0;margin-bottom:20px;list-style:none;}
 
 /* tag_box ======================================================== */
 
