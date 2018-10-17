@@ -561,11 +561,11 @@ body {
     left: 50%;
 }
 .empty {
-	height: 100vh;
+	height: 50vh;
 	text-align: center;
 }	
 .empty::before {
-	height: 100vh;
+	margin-top: 50vh;
 	text-align: center;
 	content: "^";
 }
