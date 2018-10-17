@@ -463,7 +463,7 @@ body {
   margin-left: -15px;
 }
 
-.col-lg-4, .col-sm-6 {
+.col-lg-4, .col-sm-4 {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
@@ -471,9 +471,9 @@ body {
 }
 
 @media (min-width: 768px) {
-  .col-sm-6 {
+  .col-sm-4 {
     float: left;
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -481,6 +481,27 @@ body {
   .col-lg-4 {
     float: left;
     width: 33.33333333%;
+  }
+}
+
+.col-lg-8, .col-sm-8 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-sm-8 {
+    float: right;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-8 {
+    float: right;
+    width: 77.66666666%;
   }
 }
 * {
