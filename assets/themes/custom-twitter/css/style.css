@@ -23,9 +23,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-image:
+  background-color: white;
+  /*background-image:
      linear-gradient(175deg, #CEFFD1, #333333);
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 #banner-title  {
@@ -38,7 +39,7 @@ body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 43px;
   font-weight: 200;
-  color: white;
+  color: black;
   line-height: 50px;
   text-align: center;
 }
@@ -52,7 +53,7 @@ body {
   font-size: 20px;
   margin-top: 50px;
   padding: 0px 34px;
-  color: white;
+  color: black;
   font-weight: 400;
   background-color: transparent;
 }
@@ -527,6 +528,8 @@ body {
     bottom: 0;
     left: 50%;
     margin-left: -8px;
+    background-image:
+     linear-gradient(175deg, white, black);
 }
 
 /* Container around content */
