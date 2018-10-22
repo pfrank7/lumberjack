@@ -462,7 +462,7 @@ body {
   margin-right: -15px;
   margin-left: -15px;
 }
-
+/*
 .col-lg-4, .col-sm-4 {
   position: absolute;
   min-height: 1px;
@@ -503,7 +503,7 @@ body {
     float: right;
     width: 60%;
   }
-}
+} */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
