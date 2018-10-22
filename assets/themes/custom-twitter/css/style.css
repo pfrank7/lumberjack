@@ -565,9 +565,8 @@ body {
 	text-align: center;
 }	
 .empty::after {
-	margin-top: 50vh;
 	text-align: center;
-	content: "^";
+	content: "\f13a";
 }
 /* Add arrows to the left container (pointing right) */
 .left::before {
