@@ -603,6 +603,7 @@ body {
   .timeline::after {
     left: 31px;
     background-color:transparent;
+    background-image:none;
   }
   /* Full-width containers */
   .cont {
