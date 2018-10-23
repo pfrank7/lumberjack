@@ -593,9 +593,9 @@ body {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid red;
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent red transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -606,7 +606,7 @@ body {
 /* The actual content */
 .content_timeline {
     padding: 20px 30px;
-    background-color: white;
+    background-color: red;
     position: relative;
     border-radius: 6px;
 }
