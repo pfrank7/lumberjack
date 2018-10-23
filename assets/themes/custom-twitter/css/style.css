@@ -37,7 +37,7 @@ body {
 
 #banner-title p {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 200;
   color: black;
   line-height: 50px;
@@ -46,22 +46,7 @@ body {
 
 #banner-subtitle p {
   font-size: 24px;
-}
-
-#banner-btn {
-  border: 2px solid white;
-  font-size: 20px;
-  margin-top: 50px;
-  padding: 0px 34px;
-  color: black;
-  font-weight: 400;
-  background-color: transparent;
-}
-
-#banner-btn:hover {
-  background-color: white;
-  color: #3e658d;
-  font-weight: 400;
+  margin: 10px;
 }
 .span14 {
   width: 970px;
