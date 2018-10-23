@@ -568,8 +568,7 @@ body {
 	text-align: center;
 }	
 .empty::after {
-	text-align: center;
-	content: "\f13a";
+	opacity: 0.0;
 }
 /* Add arrows to the left container (pointing right) */
 .left::before {
@@ -601,7 +600,7 @@ body {
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -21px;
 }
 
 /* The actual content */
