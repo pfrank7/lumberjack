@@ -5,6 +5,9 @@ html, body {
 body {
   padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
+h3::hover {
+  color: white;
+}
 .container > footer p {
   text-align: center; /* center align it with the container */
 }
