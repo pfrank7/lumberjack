@@ -523,6 +523,7 @@ body {
     position: relative;
     background-color: inherit;
     width: 50%;
+    color:white;
 }
 
 /* The circles on the timeline */
@@ -600,22 +601,21 @@ body {
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
+    background-color:transparent;
   }
-  
   /* Full-width containers */
   .cont {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    color:white; /* NOTE I ADDED THIS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
   }
   
   /* Make sure that all arrows are pointing leftwards */
   .cont::before {
     left: 60px;
-    border: medium solid black;
+    border: medium solid transparent;
     border-width: 10px 10px 10px 0;
-    border-color: transparent black transparent transparent;
+    border-color: transparent transparent transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
