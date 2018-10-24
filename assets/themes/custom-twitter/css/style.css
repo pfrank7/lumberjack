@@ -5,7 +5,7 @@ html, body {
 body {
   padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
-.timeline_content h3 {
+.content_timeline h3 {
   color: white;
 }
 .container > footer p {
