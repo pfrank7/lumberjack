@@ -22,7 +22,7 @@ h3 {
 
 #banner-container {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -123,9 +123,8 @@ h3 {
 }
 
 /* navigation, topbar*/
-.topbar {
-    background-image:
-    	linear-gradient(175deg, #b3cde0, #011f4b);
+.topbar .fill {
+    background-color: #011f4b;
 }
 #logo-wrap {
    float: left;
@@ -519,7 +518,7 @@ h3 {
     left: 50%;
     margin-left: -8px;
     background-image:
-     linear-gradient(175deg, white, black);
+     linear-gradient(175deg, #b3cde0, #011f4b);
 }
 
 /* Container around content */
@@ -537,8 +536,8 @@ h3 {
     width: 25px;
     height: 25px;
     right: -10px;
-    background-color: black;
-    border: 4px solid white;
+    background-color: #011f4b;
+    border: 4px solid #011f4b;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -569,9 +568,9 @@ h3 {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid black;
+    border: medium solid #011f4b;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent #011f4b;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -583,9 +582,9 @@ h3 {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid black;
+    border: medium solid #011f4b;
     border-width: 10px 10px 10px 0;
-    border-color: transparent black transparent transparent;
+    border-color: transparent #011f4b transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
