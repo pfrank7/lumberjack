@@ -123,8 +123,8 @@ h3 {
 }
 
 /* navigation, topbar*/
-.topbar .fill {
-    background-color: #011f4b;
+.topbar {
+    background-color: red;
 }
 #logo-wrap {
    float: left;
