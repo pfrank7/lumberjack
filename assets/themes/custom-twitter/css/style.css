@@ -40,7 +40,7 @@ h3 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 80px;
   font-weight: 200;
-  color: dimgrey;
+  color: #404040;
   line-height: 50px;
   text-align: center;
 }
@@ -515,7 +515,7 @@ h3 {
     left: 50%;
     margin-left: -8px;
     background-image:
-     linear-gradient(175deg, #b3cde0, #011f4b);
+     linear-gradient(175deg, #b3cde0, #404040);
 }
 
 /* Container around content */
@@ -533,8 +533,8 @@ h3 {
     width: 25px;
     height: 25px;
     right: -10px;
-    background-color: #011f4b;
-    border: 4px solid #011f4b;
+    background-color: #404040;
+    border: 4px solid #404040;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -565,9 +565,9 @@ h3 {
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid #011f4b;
+    border: medium solid #404040;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #011f4b;
+    border-color: transparent transparent transparent #404040;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -579,9 +579,9 @@ h3 {
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #011f4b;
+    border: medium solid #404040;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #011f4b transparent transparent;
+    border-color: transparent #404040 transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -592,7 +592,7 @@ h3 {
 /* The actual content */
 .content_timeline {
     padding: 20px 30px;
-    background-color: #011f4b;
+    background-color: #404040;
     position: relative;
     border-radius: 6px;
     color:white;
