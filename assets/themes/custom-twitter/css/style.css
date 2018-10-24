@@ -26,7 +26,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  background-color: white;
+  background-color: #b3cde0;
   */background-attachment: fixed;*/
 }
 
@@ -40,7 +40,7 @@ h3 {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 80px;
   font-weight: 200;
-  color: black;
+  color: #011f4b;
   line-height: 50px;
   text-align: center;
 }
@@ -125,7 +125,7 @@ h3 {
 /* navigation, topbar*/
 .topbar {
     background-image:
-    linear-gradient(175deg, #b3cde0, #011f4b);
+    	linear-gradient(175deg, #b3cde0, #011f4b);
 }
 #logo-wrap {
    float: left;
@@ -596,7 +596,7 @@ h3 {
 /* The actual content */
 .content_timeline {
     padding: 20px 30px;
-    background-color: black;
+    background-color: #011f4b;
     position: relative;
     border-radius: 6px;
     color:white;
