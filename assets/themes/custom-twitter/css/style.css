@@ -677,7 +677,8 @@ h3 {
     margin-bottom: 35px;
 }
 .docSect h4 {
-    border-style: double none double none;
+    border-top: double;
+    border-bottom: double;
 }
 .main h3 {
     color: black;
