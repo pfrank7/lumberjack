@@ -678,3 +678,6 @@ h3 {
 .docSect {
     border-style: double none double none;
 }
+.main h3 {
+    color: black;
+}
