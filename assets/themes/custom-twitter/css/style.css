@@ -650,8 +650,8 @@ h3 {
 .sidenav a {
     padding: 6px 6px 6px 32px;
     text-decoration: none;
-    font-size: 20px;
-    color: #818181;
+    font-size: 15px;
+    /*color: #818181;*/
     display: block;
 }
 
