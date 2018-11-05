@@ -79,13 +79,13 @@ description: "Lumberjack Docs"
     <p> Computes pairwise similarities between observations. The similarity between two points is defined
       as the fraction of trees such that two points fall into the same leaf node.</p>
     <h5> Usage </h5>
-    <p> ComputeSimilarity(X, forest, num.cores = 0L, Xtrain = NULL) </p>
+    <p><code> ComputeSimilarity(X, forest, num.cores = 0L, Xtrain = NULL) </code></p>
     <h5> Arguments </h5>
     <div class = "argLeft">
-      <p> X </p>
-      <p> forest </p>
-      <p> num.cores </p>
-      <p> Xtrain </p>
+      <p><code> X </code></p>
+      <p><code> forest </code></p>
+      <p><code> num.cores </code></p>
+      <p><code> Xtrain </code></p>
     </div>
     <div class = "argRight">
       <p> an n sample by d feature matrix (preferable) or data frame which was used to
@@ -99,11 +99,11 @@ description: "Lumberjack Docs"
     <h5> Value </h5>
     <p> similarity a normalized n by n matrix of pairwise similarities </p>
     <h5> Examples </h5>
-    <p> library(rerf) </p>
-    <p> X <- as.matrix(iris[,1:4])</p>
-    <p> Y <- iris[[5L]]</p>
-    <p> forest <- RerF(X, Y, num.cores = 1L)</p>
-    <p> sim.matrix <- ComputeSimilarity(X, forest, num.cores = 1L)</p> 
+    <p> library(rerf)  </p>
+    <p><code> X &lt- as.matrix(iris[,1:4]) </code></p>
+    <p><code> Y &lt- iris[[5L]] </code></p>
+    <p><code> forest &lt- RerF(X, Y, num.cores = 1L) </code></p>
+    <p><code> sim.matrix &lt- ComputeSimilarity(X, forest, num.cores = 1L) </code></p> 
   </div>
   <div id = "FeatureImportance">FeatureImportance - Compute Feature Importance of a RerF model</div>
   <div id = "mnist">mnist - A subset of the MNIST dataset for handwritten digit classification</div>
