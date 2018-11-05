@@ -673,10 +673,10 @@ h3 {
     float: left;
 }	
 .argLeft p {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
-.docSect {
+.docSect h4 {
     border-style: double none double none;
 }
 .main h3 {
