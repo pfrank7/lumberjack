@@ -682,3 +682,6 @@ h3 {
 .main h3 {
     color: black;
 }
+.aboutSect p {
+    font-size: 10pt;
+}
