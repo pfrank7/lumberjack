@@ -30,9 +30,45 @@ description: "Lumberjack Docs"
 </div>
 
 <div class="main">
-  <h2>Sidenav Example</h2>
-  <p>This sidenav is always shown.</p>
-  <div id = "About">About</div>
+  <h2>Package 'rerf'</h2>
+  <p>Navigate through the links on the left. The full pdf documentation can be found on <a href = "https://cran.r-project.org/web/packages/rerf/rerf.pdf"> cran </a></p>
+  <div id = "About"> <h3> About </h3> 
+    <p><b> Type </b>Package</p>
+    <p><b> Title </b>Randomer Forest </p>
+    <p><b>Version </b>1.1.3</p>
+    <p><b>Date </b>2018-07-05</p>
+    <p><b>Description </b> Random Forester (RerF) is an algorithm developed by Tomita
+      (2016) <arXiv:1506.03410v2> which is similar to Random Forest - Random
+      Combination (Forest-RC) developed by Breiman (2001)
+      <doi:10.1023/A:1010933404324>. Random Forests create axis-parallel, or
+      orthogonal trees. That is, the feature space is recursively split along
+      directions parallel to the axes of the feature space. Thus, in cases in
+      which the classes seem inseparable along any single dimension, Random
+      Forests may be suboptimal. To address this, Breiman also proposed and
+      characterized Forest-RC, which uses linear combinations of coordinates
+      rather than individual coordinates, to split along. This package,
+      'rerf', implements RerF which is similar to Forest-RC. The difference
+      between the two algorithms is where the random linear combinations
+      occur: Forest-RC combines features at the per tree level whereas RerF
+      takes linear combinations of coordinates at every node in the tree.</p>
+      License GPL-2
+    <p><b> URL </b><a hrerf = "https://github.com/neurodata/R-RerF">https://github.com/neurodata/R-RerF</a></p>
+    <p><b> Imports </b>parallel, RcppZiggurat, utils, stats, dummies</p>
+    <p><b> LinkingTo </b>Rcpp, RcppArmadillo</p>
+    <p><b> SystemRequirements </b>GNU make</p>
+    <p><b> ByteCompile </b>true</p>
+    <p><b> RoxygenNote </b>6.0.1</p>
+    <p><b> NeedsCompilation </b>yes</p>
+    <p><b> Author </b>James Browne [aut, cre],
+     Tyler Tomita [aut],
+     Joshua Vogelstein [ths]</p>
+    <p><b> Maintainer </b>James Browne <jbrowne6@jhu.edu></p>
+    <p><b> Depends </b>R (>= 2.10)</p>
+    <p><b> Repository </b>CRAN</p>
+    <p><b> Date/Publication </b>2018-07-29 06:10:03 UTC</p>
+  
+  
+  </div>
   <div id = "BuildTree">BuildTree - RerF Tree Generator</div>
   <div id = "ComputeSimilarity">ComputeSimilarity - Compute Similarities</div>
   <div id = "FeatureImportance">FeatureImportance - Compute Feature Importance of a RerF model</div>
