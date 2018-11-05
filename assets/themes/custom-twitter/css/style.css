@@ -682,6 +682,10 @@ h3 {
 }
 .main h3 {
     color: black;
+    text-align:center;
+}
+.main h4 {
+    text-align:center;
 }
 .aboutSect p {
     font-size: 10pt;
