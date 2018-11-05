@@ -661,6 +661,7 @@ h3 {
 
 .main {
     margin-left: 300px; /* Same as the width of the sidenav */
+    margin-top: 20px;
 }
 
 @media screen and (max-height: 450px) {
