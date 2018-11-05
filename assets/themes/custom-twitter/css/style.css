@@ -641,10 +641,10 @@ h3 {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: auto;
     background-color: transparent;
     overflow-x: hidden;
-    padding-top: 20px;
+    padding-top: 100px;
 }
 
 .sidenav a {
