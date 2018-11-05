@@ -673,10 +673,10 @@ h3 {
     float: left;
 }	
 .argLeft p {
-    height: 50px;
+    height: 60px;
 }
 .argRight p {
-    height: 50px;
+    height: 60px;
 }
 .docSect h4 {
     border-top: double;
@@ -687,6 +687,9 @@ h3 {
     text-align:center;
 }
 .main h4 {
+    text-align:center;
+}
+.main h2 {
     text-align:center;
 }
 .aboutSect p {
