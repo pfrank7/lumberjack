@@ -673,8 +673,10 @@ h3 {
     float: left;
 }	
 .argLeft p {
-    margin-top: 35px;
-    margin-bottom: 35px;
+    height: 50px;
+}
+.argRight p {
+    height: 50px;
 }
 .docSect h4 {
     border-top: double;
@@ -690,3 +692,7 @@ h3 {
 .aboutSect p {
     font-size: 10pt;
 }
+.docSect p {
+    font-size: 10pt;
+}
+
