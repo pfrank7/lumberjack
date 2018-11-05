@@ -51,7 +51,7 @@ description: "Lumberjack Docs"
       between the two algorithms is where the random linear combinations
       occur: Forest-RC combines features at the per tree level whereas RerF
       takes linear combinations of coordinates at every node in the tree.</p>
-      License GPL-2
+      <p><b> License </b>GPL-2</p>
     <p><b> URL </b><a hrerf = "https://github.com/neurodata/R-RerF">https://github.com/neurodata/R-RerF</a></p>
     <p><b> Imports </b>parallel, RcppZiggurat, utils, stats, dummies</p>
     <p><b> LinkingTo </b>Rcpp, RcppArmadillo</p>
@@ -62,14 +62,38 @@ description: "Lumberjack Docs"
     <p><b> Author </b>James Browne [aut, cre],
      Tyler Tomita [aut],
      Joshua Vogelstein [ths]</p>
-    <p><b> Maintainer </b>James Browne <jbrowne6@jhu.edu></p>
+    <p><b> Maintainer </b>James Browne \<jbrowne6@jhu.edu\></p>
     <p><b> Depends </b>R (>= 2.10)</p>
     <p><b> Repository </b>CRAN</p>
     <p><b> Date/Publication </b>2018-07-29 06:10:03 UTC</p>
   
   
   </div>
-  <div id = "BuildTree">BuildTree - RerF Tree Generator</div>
+  <div id = "BuildTree">
+    <h4> BuildTree - RerF Tree Generator </h4>
+    <h5> Description </h5>
+    <p> Computes pairwise similarities between observations. The similarity between two points is defined
+      as the fraction of trees such that two points fall into the same leaf node.</p>
+    <h5> Usage </h5>
+    <p> ComputeSimilarity(X, forest, num.cores = 0L, Xtrain = NULL) </p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p> X </p>
+      <p> forest </p>
+      <p> num.cores </p>
+      <p> Xtrain </p>
+    </div>
+    <div class = "argRight">
+      <p> an n sample by d feature matrix (preferable) or data frame which was used to
+        train the provided forest. </p>
+      <p> forest a forest trained using the rerf function, with COOB=TRUE. </p>
+      <p> num.cores the number of cores to use while training. If num.cores=0 then 1 less 
+        than the number of cores reported by the OS are used. (num.cores=0) </p>
+      <p> Xtrain an n by d numeric matrix (preferable) or data frame. This should be the same data matrix/frame used 
+        to train the forest, and is only required if RerF was called with rank.transform = TRUE. (Xtrain=NULL) </p>
+    </div>  
+  </div>
+    
   <div id = "ComputeSimilarity">ComputeSimilarity - Compute Similarities</div>
   <div id = "FeatureImportance">FeatureImportance - Compute Feature Importance of a RerF model</div>
   <div id = "mnist">mnist - A subset of the MNIST dataset for handwritten digit classification</div>
