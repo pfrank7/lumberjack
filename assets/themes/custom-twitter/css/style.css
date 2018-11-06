@@ -700,7 +700,7 @@ h3 {
 }
 .anchor{
   display: block;
-  height: 50px; /*same height as header*/
-  margin-top: -50px; /*same height as header*/
+  height: 90px; /*same height as header*/
+  margin-top: -90px; /*same height as header*/
   visibility: hidden;
 }
