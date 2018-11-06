@@ -71,7 +71,74 @@ description: "Lumberjack Docs"
   
   
   </div>
-  <div id = "BuildTree">
+  <span class="anchor" id = "BuildTree"></span>
+  <div class = "docSect">
+    <h4> BuildTree - RerF Tree Generator </h4>
+    <h5> Description </h5>
+    <p> Creates a single decision tree based on an input matrix and class vector. This is the function used
+      by rerf to generate trees.</p>
+    <h5> Usage </h5>
+    <p><code> BuildTree(X, Y, min.parent, max.depth, bagging, replacement, stratify,
+      class.ind, class.ct, fun, mat.options, store.oob, store.impurity, progress,
+        rotate) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> Y </code></p>
+      <p><code> min.parent </code></p>
+      <p><code> max.depth </code></p>
+      <p><code> bagging </code></p>
+      <p><code> replacement </code></p>
+      <p><code> stratify </code></p>
+      <p><code> class.ind </code></p>
+      <p><code> class.ct  </code></p>
+      <p><code> fun </code></p>
+      <p><code> mat.options  </code></p>
+      <p><code> store.oob </code></p>
+      <p><code> store.impurity  </code></p>
+      <p><code> progress  </code></p>
+      <p><code> rotate </code></p>
+    </div>
+    <div class = "argRight">
+      <p> an n by d numeric matrix (preferable) or data frame. The rows correspond to
+        observations and columns correspond to features. </p>
+      <p> an n length vector of class labels. Class labels must be integer or numeric and
+        be within the range 1 to the number of classes. </p>
+      <p> the minimum splittable node size. A node size < min.parent will be a leaf node.
+        (min.parent = 6) </p>
+      <p> the longest allowable distance from the root of a tree to a leaf node (i.e. the
+        maximum allowed height for a tree). If max.depth=0, the tree will be allowed to
+        grow without bound. (max.depth=0) </p>
+      <p> a non-zero value means a random sample of X will be used during tree creation.
+        If replacement = FALSE the bagging value determines the percentage of samples
+        to leave out-of-bag. If replacement = TRUE the non-zero bagging value is
+        ignored. (bagging=.2) </p>
+      <p> if TRUE then n samples are chosen, with replacement, from X. (replacement=TRUE) </p>
+      <p> if TRUE then class sample proportions are maintained during the random sampling.
+        Ignored if replacement = FALSE. (stratify = FALSE). </p>
+      <p> a vector of lists. Each list holds the indexes of its respective class (e.g. list 1
+        contains the index of each class 1 sample). </p>
+      <p> a cumulative sum of class counts. </p>
+      <p> a function that creates the random projection matrix. (fun=NULL) </p>
+      <p> a list of parameters to be used by fun. (mat.options=c(ncol(X), round(ncol(X)^.5),1L,
+        1/ncol(X))) </p>
+      <p> if TRUE then the samples omitted during the creation of a tree are stored as part
+        of the tree. This is required to run OOBPredict(). (store.oob=FALSE) </p>
+      <p> if TRUE then the reduction in Gini impurity is stored for every split. This is
+        required to run FeatureImportance() (store.impurity=FALSE) </p>
+      <p> if true a pipe is printed after each tree is created. This is useful for large datasets.
+        (progress=FALSE) </p>
+      <p> if TRUE then the data matrix X is uniformly randomly rotated. (rotate=FALSE) </p>
+      
+    </div>
+    <h5> Value </h5>
+    <p> similarity a normalized n by n matrix of pairwise similarities </p>
+    <h5> Examples </h5>
+    <p><code> library(rerf)  </code></p>
+    <p><code> X &lt- as.matrix(iris[,1:4]) </code></p>
+    <p><code> Y &lt- iris[[5L]] </code></p>
+    <p><code> forest &lt- RerF(X, Y, num.cores = 1L) </code></p>
+    <p><code> sim.matrix &lt- ComputeSimilarity(X, forest, num.cores = 1L) </code></p> 
   </div>
   <span class="anchor" id = "ComputeSimilarity"></span>
   <div class = "docSect">
@@ -107,7 +174,29 @@ description: "Lumberjack Docs"
     <p><code> sim.matrix &lt- ComputeSimilarity(X, forest, num.cores = 1L) </code></p> 
   </div>
   <span class="anchor" id = "FeatureImportance"></span>
-  <div>FeatureImportance - Compute Feature Importance of a RerF model</div>
+  <div class = "docSect">
+    <h4> FeatureImportance - Compute Feature Importance of a RerF model </h4>
+    <h5> Description </h5>
+    <p> Computes feature importance of every unique feature used to make a split in the RerF model.</p>
+    <h5> Usage </h5>
+    <p><code> FeatureImportance(forest, num.cores = 0L) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> forest </code></p>
+      <p><code> num.cores </code></p>
+    </div>
+    <div class = "argRight">
+      <p> a forest trained using the RerF function with argument store.impurity = TRUE </p>
+      <p> number of cores to use. If num.cores = 0, then 1 less than the number of cores
+        reported by the OS are used. (num.cores = 0) </p>
+    </div>
+    <h5> Value </h5>
+    <p> feature.imp </p>
+    <h5> Examples </h5>
+    <p><code> library(rerf)  </code></p>
+    <p><code> forest &lt- RerF(as.matrix(iris[, 1:4]), iris[[5L]], num.cores = 1L, store.impurity = TRUE) </code></p>
+    <p><code> feature.imp &lt- FeatureImportance(forest, num.cores = 1L) </code></p>
+  </div>
   <span class="anchor" id = "mnist"></span>    
   <div>mnist - A subset of the MNIST dataset for handwritten digit classification</div>
   <div id = "OOBPredict">OOBPredict - Compute out-of-bag predictions</div>
