@@ -709,6 +709,7 @@ h3 {
 .mySlides {
 	display:none;
 	text-align:center;
+	height:100px;
 }
 .wht {
     background-color:white;
