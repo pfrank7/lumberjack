@@ -743,11 +743,9 @@ h3 {
 .cont_display {
     text-align:center;
     color:white;
-    background-color:black;
+    background-color:#404040;
+    width:50%;
     position:absolute;
-    left:50%;
-    bottom:0;
     transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);
-    width:100%;
 }
