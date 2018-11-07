@@ -737,7 +737,7 @@ h3 {
     padding-left:8px;
     padding-right:8px;
     text-align:center;
-    border-radius: 5pt;
+    border-radius: 5px;
     border-color:white;
 }
 .cont_display {
@@ -745,7 +745,7 @@ h3 {
     color:white;
     background-color:#404040;
     width:50%;
-    position:absolute;
     transform:translate(-50%,0%);
     -ms-transform:translate(-50%,0%);
+    border-radius:15px;
 }
