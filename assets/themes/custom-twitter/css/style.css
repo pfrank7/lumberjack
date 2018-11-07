@@ -723,10 +723,12 @@ h3 {
 .arrow_left {
 	float:left;
 	color:white;
+	font-size: 20pt;
 }
 .arrow_right {
 	float:right;
 	color:white;
+	font-size: 20pt;
 }
 .badge {
     height:13px;
