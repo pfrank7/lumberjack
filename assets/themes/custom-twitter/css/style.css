@@ -709,6 +709,12 @@ h3 {
 .wht {
     background-color:white;
 }
+.hover-wht {
+    background-color:transparent;
+}
+.hover-wht {
+    background-color:white;
+}	
 .w3-left, .w3-right, .badge {cursor:pointer}
 .badge {
     height:13px;
