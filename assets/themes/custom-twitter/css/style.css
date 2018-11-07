@@ -706,6 +706,9 @@ h3 {
 }
 /**************** PANNING INFO *****************/
 .mySlides {display:none}
+.wht {
+    background-color:white;
+}
 .w3-left, .w3-right, .badge {cursor:pointer}
 .badge {
     height:13px;
