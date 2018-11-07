@@ -29,24 +29,27 @@ description: "Lumberjack"
     <div>
      <div class="w3-content w3-display-container" style="max-width:800px">
       <div class="w3-content" style="max-width:400px">
-        <div class="mySlides w3-container w3-red">
-          <h1><b>Did You Know?</b></h1>
-          <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+        <div class="mySlides">
+          <h3><i class="fa fa-flag"></i> A robust ensemble method...</h3>
+          <p>Lumberjack combines sparse random projections with the random forest algorithm to acheive high accuracy on a variety of datasets.
+          </p>
         </div>
-        <div class="mySlides w3-container w3-red">
-          <h1><b>Did You Know?</b></h1>
-          <h1><i>We plan to sell trips</i></h1>
+        <div class="mySlides">
+          <h3><i class="fa fa-cube"></i> An easy-to-use package...</h3>
+          <p>Currently available for R and coming soon to Python, Lumberjack is supported on Windows, Linux, and Mac OS.
+          </p>
         </div>
-        <div class="mySlides w3-container w3-red">
-          <h1><b>Did You Know?</b></h1>
-          <h1><i>We plan</i></h1>
+        <div class="mySlides">
+          <h3><i class="fa fa-wrench"></i> A scalable solution </h3>
+          <p>Lumberjack is optimized for both speed and memory performance through native implementation and multicore parallelization.
+          </p>
         </div>
-        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-          <span class="badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <div class="cont_display">
+          <div class="arrow_left" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="arrow_right" onclick="plusDivs(1)">&#10095;</div>
+          <span class="badge demo hover-wht" onclick="currentDiv(1)"></span>
+          <span class="badge demo hover-wht" onclick="currentDiv(2)"></span>
+          <span class="badge demo hover-wht" onclick="currentDiv(3)"></span>
         </div>
        </div>
      </div>
@@ -134,9 +137,9 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
+     dots[i].className = dots[i].className.replace(" wht", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className += " wht";
 }
 </script>
