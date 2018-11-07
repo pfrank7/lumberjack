@@ -729,3 +729,13 @@ h3 {
     padding-right:8px;
     text-align:center
 }
+.cont_display {
+    text-align:center;
+    color:white;
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%);
+    width:100%;
+}
