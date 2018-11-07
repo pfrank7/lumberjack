@@ -715,7 +715,7 @@ h3 {
 .hover-wht {
     background-color:transparent;
 }
-.hover-wht {
+.hover-wht:hover {
     background-color:white;
 }	
 .arrow_left, .arrow_right, .badge {cursor:pointer}
