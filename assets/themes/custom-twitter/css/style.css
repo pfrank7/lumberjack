@@ -715,7 +715,9 @@ h3 {
 .hover-wht {
     background-color:white;
 }	
-.w3-left, .w3-right, .badge {cursor:pointer}
+.arrow_left, .arrow_right, .badge {cursor:pointer}
+.arrow_left {float:left;}
+.arrow_right {float:right;}
 .badge {
     height:13px;
     width:13px;
