@@ -751,5 +751,6 @@ h3 {
     transform:translate(50%,0%);
     -ms-transform:translate(50%,0%);
     border-radius:15px;
+    height:150px;
     padding:15px;
 }
