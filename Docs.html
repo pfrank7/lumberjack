@@ -191,11 +191,85 @@ description: "Lumberjack Docs"
     <p><code> forest &lt- RerF(as.matrix(iris[, 1:4]), iris[[5L]], num.cores = 1L, store.impurity = TRUE) </code></p>
     <p><code> feature.imp &lt- FeatureImportance(forest, num.cores = 1L) </code></p>
   </div>
-  <span class="anchor" id = "mnist"></span>    
-  <!--div>mnist - A subset of the MNIST dataset for handwritten digit classification</div>
-  <div id = "OOBPredict">OOBPredict - Compute out-of-bag predictions</div>
-  <div id = "PackForest">PackForest - Packs a forest and saves modified forest to disk for use by PackPredict
-function</div>
+  <span class="anchor" id = "mnist"></span> 
+  <div class = "docSect">
+    <h4> mnist - A subset of the MNIST dataset for handwritten digit classification </h4>
+    <h5> Description </h5>
+    <p> A dataset consiting of 10 percent of the MNIST training set and the full test set.</p>
+    <h5> Usage </h5>
+    <p><code> data(mnist) </code></p>
+    <h5> Format </h5>
+    <p> A list with four items: Xtrain is a training set matrix with 6000 rows (samples) and 784 columns
+      (features), Xtrain is an integer array of corresponding training class labels, Xtest is a test set matrix
+      of 10000 rows and 784 columns, and Ytest is the corresponding class labels. Rows in Xtrain and
+      Xtest correspond to different images of digits, and columns correspond to the pixel intensities in
+      each image, obtained by flattening the image pixels in column-major ordering. </p>
+    <h5> Source </h5>
+    <p><a href = "http://yann.lecun.com/exdb/mnist/"> MNIST </a></p>
+    <h5> References </h5>
+    <p> Y. LeCun, L. Bottou, Y. Bengio, and P. Haffner. "Gradient-based learning applied to document
+      recognition." Proceedings of the IEEE, 86(11):2278-2324, November 1998. </p>
+    <h5> Examples </h5>
+    <p><code> data(mnist) </code></p>
+  </div>
+  <span class="anchor" id = "OOBPredict"></span> 
+  <div class = "docSect">
+    <h4> OOBPredict - Compute out-of-bag predictions </h4>
+    <h5> Description </h5>
+    <p> Computes out-of-bag class predictions for a forest trained with store.oob=TRUE.</p>
+    <h5> Usage </h5>
+    <p><code> OOBPredict(X, forest, num.cores = 0L, output.scores = FALSE) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> forest </code></p>
+      <p><code> num.cores </code></p>
+      <p><code> output.scores </code></p>
+    </div>
+    <div class = "argRight">
+      <p> an n sample by d feature matrix (preferable) or data frame which was used to
+        train the provided forest. </p>
+      <p> a forest trained using the RerF function, with store.oob=TRUE. </p>
+      <p> number of cores to use. If num.cores = 0, then 1 less than the number of cores
+        reported by the OS are used. (num.cores = 0) </p>
+      <p> if TRUE then predicted class scores (probabilities) for each observation are returned
+        rather than class labels. (output.scores = FALSE) </p>
+    </div>
+    <h5> Value </h5>
+    <p> predictions a length n vector of predictions in a format similar to the Y vector used to train the forest </p>
+    <h5> Examples </h5>
+    <p><code> library(rerf) </code></p>
+    <p><code> X <- as.matrix(iris[,1:4]) </code></p>
+    <p><code> Y <- iris[[5L]] </code></p>
+    <p><code> forest <- RerF(X, Y, store.oob=TRUE, num.cores = 1L) </code></p>
+    <p><code> predictions <- OOBPredict(X, forest, num.cores = 1L) </code></p>
+    <p><code> oob.error <- mean(predictions != Y) </code></p>
+  </div>
+  <span class="anchor" id = "PackForest"></span> 
+  <div class = "docSect">
+    <h4> PackForest - Packs a forest and saves modified forest to disk for use by PackPredict
+      function </h4>
+    <h5> Description </h5>
+    <p> Efficiently packs a forest trained with the RF option. Two intermediate data structures are written
+      to disk, forestPackTempFile.csv and traversalPackTempFile.csv. The size of these data structures is
+      proportional to a trained forest and training data respectively. Both data structures are removed at
+      the end of the operation. The resulting forest is saved as forest.out. The size of this file is similar to
+      the size of the trained forest.</p>
+    <h5> Usage </h5>
+    <p><code> PackForest(X, Y, forest) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> Y </code></p>
+      <p><code> forest </code></p>
+    </div>
+    <div class = "argRight">
+      <p> an n by d numeric matrix (preferable) or data frame used to train the forest. </p>
+      <p> a numeric vector of size n. If the Y vector used to train the forest was not of type
+        numeric then a simple call to as.numeric(Y) will suffice as input. </p>
+      <p> a forest trained using the RerF function, with store.oob=TRUE. </p>
+    </div>
+  </div>
   <div id = "PackPredict">PackPredict - Compute class predictions for each observation in X</div>
   <div id = "Predict">Predict - Compute class predictions for each observation in X</div>
   <div id = "RandMat">RandMat - Create a Random Matrix</div>
