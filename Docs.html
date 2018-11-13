@@ -446,7 +446,7 @@ description: "Lumberjack Docs"
       <p><code> bagging </code></p>
       <p><code> replacement </code></p>
       <p><code> stratify </code></p>
-      <p style = "height: 200px;"><code> fun </code></p>
+      <p style = "height: 150px;"><code> fun </code></p>
       <p><code> mat.options </code></p>
       <p><code> rank.transform </code></p>
       <p><code> store.oob </code></p>
@@ -455,7 +455,7 @@ description: "Lumberjack Docs"
       <p><code> rotate </code></p>
       <p><code> num.cores </code></p>
       <p><code> seed </code></p>
-      <p><code> cat.map </code></p>
+      <p style = "height: 200px;"><code> cat.map </code></p>
       <p><code> rfPack </code></p>
       <p><code> prob </code></p>
 
@@ -471,7 +471,7 @@ description: "Lumberjack Docs"
       <p> a non-zero value means a random sample of X will be used during tree creation. If replacement = FALSE the bagging value determines the percentage of samples to leave out-of-bag. If replacement = TRUE the non-zero bagging value is ignored. (bagging=.2)</p>
       <p> if TRUE then n samples are chosen, with replacement, from X. (replacement=TRUE) </p>
       <p> if TRUE then class sample proportions are maintained during the random sampling. Ignored if replacement = FALSE. (stratify = FALSE). </p>
-      <p style = "height: 200px;"> a function that creates the random projection matrix. If NULL and cat.map is NULL, then RandMat is used. If NULL and cat.map is not NULL, then
+      <p style = "height: 150px;"> a function that creates the random projection matrix. If NULL and cat.map is NULL, then RandMat is used. If NULL and cat.map is not NULL, then
         RandMatCat is used, which adjusts the sampling of features when categorical features have been one-of-K encoded. If a custom function is to be used, then it
         must return a matrix in sparse representation, in which each nonzero is an array of the form (row.index, column.index, value). See RandMat or RandMatCat for
         details. (fun=NULL)</p>
@@ -484,7 +484,7 @@ description: "Lumberjack Docs"
       <p> the number of cores to use while training. If num.cores=0 then 1 less than the number of cores reported by the OS are used. (num.cores=0) </p>
       <p> the seed to use for training the forest. For two runs to match you must use the same seed for each run AND you must also use the same number of cores for
         each run. (seed=sample((0:100000000,1))) </p>
-      <p> a list specifying which columns in X correspond to the same one-of-K encoded feature. Each element of cat.map is a numeric vector specifying the K column
+      <p style = "height: 200px;"> a list specifying which columns in X correspond to the same one-of-K encoded feature. Each element of cat.map is a numeric vector specifying the K column
         indices of X corresponding to the same categorical feature after one-of-K encoding. All one-of-K encoded features in X must come after the numeric features.
         The K encoded columns corresponding to the same categorical feature must be placed contiguously within X. The reason for specifying cat.map is to adjust
         for the fact that one-of-K encoding cateogorical features results in a dilution of numeric features, since a single categorical feature is expanded to K binary features.
