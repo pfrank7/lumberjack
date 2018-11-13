@@ -134,6 +134,8 @@ description: "Lumberjack Docs"
     <h5> Value </h5>
     <p> Tree </p>
   </div>
+    
+    
   <span class="anchor" id = "ComputeSimilarity"></span>
   <div class = "docSect">
     <h4> ComputeSimilarity - Compute Similarities </h4>
@@ -167,6 +169,8 @@ description: "Lumberjack Docs"
     <p><code> forest &lt- RerF(X, Y, num.cores = 1L) </code></p>
     <p><code> sim.matrix &lt- ComputeSimilarity(X, forest, num.cores = 1L) </code></p> 
   </div>
+    
+    
   <span class="anchor" id = "FeatureImportance"></span>
   <div class = "docSect">
     <h4> FeatureImportance - Compute Feature Importance of a RerF model </h4>
@@ -191,6 +195,8 @@ description: "Lumberjack Docs"
     <p><code> forest &lt- RerF(as.matrix(iris[, 1:4]), iris[[5L]], num.cores = 1L, store.impurity = TRUE) </code></p>
     <p><code> feature.imp &lt- FeatureImportance(forest, num.cores = 1L) </code></p>
   </div>
+    
+    
   <span class="anchor" id = "mnist"></span> 
   <div class = "docSect">
     <h4> mnist - A subset of the MNIST dataset for handwritten digit classification </h4>
@@ -212,6 +218,8 @@ description: "Lumberjack Docs"
     <h5> Examples </h5>
     <p><code> data(mnist) </code></p>
   </div>
+    
+    
   <span class="anchor" id = "OOBPredict"></span> 
   <div class = "docSect">
     <h4> OOBPredict - Compute out-of-bag predictions </h4>
@@ -245,6 +253,8 @@ description: "Lumberjack Docs"
     <p><code> predictions <- OOBPredict(X, forest, num.cores = 1L) </code></p>
     <p><code> oob.error <- mean(predictions != Y) </code></p>
   </div>
+    
+    
   <span class="anchor" id = "PackForest"></span> 
   <div class = "docSect">
     <h4> PackForest - Packs a forest and saves modified forest to disk for use by PackPredict
@@ -270,16 +280,264 @@ description: "Lumberjack Docs"
       <p> a forest trained using the RerF function, with store.oob=TRUE. </p>
     </div>
   </div>
-  <div id = "PackPredict">PackPredict - Compute class predictions for each observation in X</div>
-  <div id = "Predict">Predict - Compute class predictions for each observation in X</div>
-  <div id = "RandMat">RandMat - Create a Random Matrix</div>
-  <div id = "RandMatCat">RandMatCat - Create a Random Matrix for use when categorical features are present</div>
+    
+    
+  <span class="anchor" id = "PackPredict"></span>     
+  <div class = "docSect">
+    <h4> Predict - Compute class predictions for each observation in X</h4>
+    <h5> Description </h5>
+    <p> Predicts the classification of samples using a trained forest.</p>
+    <h5> Usage </h5>
+    <p><code> PackPredict(X, num.cores = 1) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> num.cores </code></p>
+    </div>
+    <div class = "argRight">
+      <p> an n by d numeric matrix (preferable) or data frame. The rows correspond to
+        observations and columns correspond to features of a test set, which should be
+        different from the training set. </p>
+      <p> forest a forest trained using the rerf function, with COOB=TRUE. </p>
+      <p> the number of cores to use while predicting. (num.cores=0) </p>
+    </div>
+    <h5> Value </h5>
+    <p> predictions an n length vector of prediction class numbers </p>
+    <h5> Examples </h5>
+    <p><code> library(rerf)  </code></p>
+    <p><code> trainIdx <- c(1:40, 51:90, 101:140) </code></p>
+    <p><code> X <- as.matrix(iris[,1:4]) </code></p>
+    <p><code> Y <- as.numeric(iris[,5]) </code></p>
+    <p><code> forest <- RerF(X,Y, mat.options = list(p = ncol(X), d =ceiling(sqrt(ncol(X))), random.matrix = "rf", rho = 1/ncol(X)), rfPack=TRUE, num.cores=2) </code></p>
+    <p><code> predictions <- PackPredict(X) </code></p>
+  </div>
+    
+    
+  <span class="anchor" id = "Predict"></span>     
+  <div class = "docSect">
+    <h4> Predict - Compute class predictions for each observation in X </h4>
+    <h5> Description </h5>
+    <p> Predicts the classification of samples using a trained forest.</p>
+    <h5> Usage </h5>
+    <p><code> Predict(X, forest, num.cores = 0L, Xtrain = NULL, aggregate.output = TRUE, output.scores = FALSE) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> forest </code></p>
+      <p><code> num.cores </code></p>
+      <p><code> Xtrain </code></p>
+      <p><code> aggregate.output </code></p>
+      <p><code> output.scores </code></p>
+    </div>
+    <div class = "argRight">
+      <p> an n by d numeric matrix (preferable) or data frame. The rows correspond to
+        observations and columns correspond to features of a test set, which should be
+        different from the training set. </p>
+      <p> a forest trained using the RerF function. </p>
+      <p> the number of cores to use while training. If NumCores=0 then 1 less than the
+        number of cores reported by the OS are used. (NumCores=0) </p>
+      <p> an n by d numeric matrix (preferable) or data frame. This should be the same
+        data matrix/frame used to train the forest, and is only required if RerF was called
+        with rank.transform = TRUE. (Xtrain=NULL) </p>
+      <p> if TRUE then the tree predictions are aggregated via majority vote. Otherwise,
+        the individual tree predictions are returned. (aggregate.output=TRUE) (num.cores=0) </p>
+      <p> if TRUE then predicted class scores (probabilities) for each observation are returned
+        rather than class labels. (output.scores = FALSE) </p>
+    </div>
+    <h5> Value </h5>
+    <p> predictions an n length vector of predictions </p>
+    <h5> Examples </h5>
+    <p><code> library(rerf)  </code></p>
+    <p><code> trainIdx <- c(1:40, 51:90, 101:140) </code></p>
+    <p><code> X <- as.matrix(iris[,1:4]) </code></p>
+    <p><code> Y <- as.numeric(iris[,5]) </code></p>
+    <p><code> forest <- RerF(X[trainIdx, ], Y[trainIdx], num.cores = 1L, rank.transform = TRUE) # Using a set of samples with unknown classification </code></p>
+    <p><code> predictions <- Predict(X[-trainIdx, ], forest, num.cores = 1L, Xtrain = X[trainIdx, ]) </code></p>
+    <p><code> error.rate <- mean(predictions != Y[-trainIdx]) </code></p>
+  </div>  
+  
+    
+  <span class="anchor" id = "RandMat"></span> 
+  <div class = "docSect">
+    <h4> RandMat - Create a Random Matrix </h4>
+    <h5> Description </h5>
+    <p> Create a random matrix. At each node of a tree, a p-by-d random matrix is sampled and used to
+      generate a new set of d features, each of which is a linear combination of the original p features.
+      Thus, the columns of the random matrix can be viewed as a set of bases in a new feature space.</p>
+    <h5> Usage </h5>
+    <p><code> RandMat(mat.options) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> mat.options </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+      <p><code> </code></p>
+    </div>
+    <div class = "argRight">
+      <p> a list of parameters specifying the distribution for sampling the random matrix.
+        The first element specifies the dimensionality p of the data (# features). The
+        second element specifies the number of columns d in the random matrix. The
+        third element specifies the "type" of distribution. The types of distributions supported
+        thus far are: "binary", "continuous", "poisson", "rf", "frc", and "frcn."
+        The fourth element specifies the average density (proportion of nonzeros) rho of
+        the random matrix. For the "binary" distribution, rho is a real number between 0
+        and 1. rho*d*p elements of the matrix are randomly chosen to be nonzero. Each
+        nonzero is randomly assigned -1 or 1 with equal probability. The "continuous"
+        distribution is the same as "binary", except the nonzeros are sampled iid from
+        the standard normal distribution. "poisson" samples the number of nonzeros for
+        each of the d columns from a poisson(rho) distribution (rho is an integer >= 1).
+        The location of nonzeros in each column is randomly chosen, and the nonzeros
+        are assigned -1 or 1 with equal probability. "rf" randomly samples d indices
+        in 1,...,p without replacement (d <= p is required). Each of the d columns in
+        the random matrix has a single nonzero placed at the respective sampled index.
+        This is equivalent to the canonical random forest algorithm, which subsamples
+        variables at each node. Note that rho is irrelevant. "frc" is Breiman’s forest-RC
+        algorithm, which samples rho nonzeros for each of the d columns (rho must be
+        an integer >= 1). The location of nonzeros in each column is randomly chosen,
+        and each nonzero location is assigned a value uniformly randomly over the interval
+        [-1,1]. "frcn" is the same as "frc" except the nonzeros are sampled from
+        the standard normal distribution. </p>
+    </div>
+    <h5> Value </h5>
+    <p> random.matrix </p>
+  </div>
+    
+    
+  <span class="anchor" id = "RandMatCat"></span> 
+  <div class = "docSect">
+    <h4>RandMatCat - Create a Random Matrix for use when categorical features are present</h4>
+    <h5> Description </h5>
+    <p> The same as the function RandMat, except that this function is used when a cat.map object is
+      provided (see RerF for details).</p>
+    <h5> Usage </h5>
+    <p><code> RandMatCat(mat.options) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> mat.options </code></p>
+    </div>
+    <div class = "argRight">
+      <p> the same as that for RandMat, except an additional fifth argument cat.map is
+        taken, which specifies which one-of-K encoded columns in X correspond to the
+        same categorical feature. </p>
+    </div>
+    <h5> Value </h5>
+    <p> random.matrix </p>
+  </div>  
   <div id = "RerF">RerF - RerF forest Generator</div>
-  <div id = "RunFeatureImportance">RunFeatureImportance - Compute Feature Importance of a single RerF tree</div>
-  <div id = "RunOOB">RunOOB - Predict class labels on out-of-bag observations using a single tree</div>
-  <div id = "RunPredict">RunPredict - Predict class labels on a test set using a single tree.</div>
-  <div id = "RunPredictLeaf">RunPredictLeaf - Calculate similarity using a single tree</div>
-  <div id = "StrCorr">StrCorr - Compute tree strength and correlation</div-->
-</div>
-     
+    
+  <span class="anchor" id = "RunFeatureImportance"></span> 
+  <div class = "docSect">
+    <h4>RunFeatureImportance - Compute Feature Importance of a single RerF tree</h4>
+    <h5> Description </h5>
+    <p> Computes feature importance of every unique feature used to make a split in a single tree.</p>
+    <h5> Usage </h5>
+    <p><code> RunFeatureImportance(tree, unique.projections) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> tree </code></p>
+      <p><code> unique.projections </code></p>
+    </div>
+    <div class = "argRight">
+      <p>a single tree from a trained RerF model with argument store.impurity = TRUE. </p>
+      <p>a list of all of the unique split projections used in the RerF model. </p>
+    </div>
+    <h5> Value </h5>
+    <p> feature.imp </p>
+  </div>
+    
+  <span class="anchor" id = "RunOOB"></span> 
+  <div class = "docSect">
+    <h4>RunOOB - Predict class labels on out-of-bag observations using a single tree</h4>
+    <h5> Description </h5>
+    <p> This is the base function called by OOBPredict.</p>
+    <h5> Usage </h5>
+    <p><code> RunFeatureImportance(tree, unique.projections) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> tree </code></p>
+    </div>
+    <div class = "argRight">
+      <p>an n sample by d feature matrix (preferable) or data frame which was used to
+        train the provided forest.</p>
+      <p>a tree from a forest returned by RerF. </p>
+    </div>
+    <h5> Value </h5>
+    <p> predictions prediction matrix used by OOBPredict </p>
+  </div>
+    
+  <span class="anchor" id = "RunPredict"></span> 
+  <div class = "docSect">
+    <h4> RunPredict - Predict class labels on a test set using a single tree.</h4>
+    <h5> Description </h5>
+    <p> This is the base function called by Predict.</p>
+    <h5> Usage </h5>
+    <p><code> RunPredict(X, tree)</code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> tree </code></p>
+    </div>
+    <div class = "argRight">
+      <p>an n sample by d feature matrix (preferable) or data frame which was used to
+        train the provided forest.</p>
+      <p>a tree from a forest returned by RerF.</p>
+    </div>
+    <h5> Value </h5>
+    <p> predictions an n length vector of prediction based on the tree provided to this function </p>
+  </div>
+   
+  
+  <span class="anchor" id = "RunPredictLeaf"></span> 
+  <div class = "docSect">
+    <h4> RunPredictLeaf - Calculate similarity using a single tree</h4>
+    <h5> Description </h5>
+    <p> This is the base function called by ComputeSimilarity.</p>
+    <h5> Usage </h5>
+    <p><code> RunPredictLeaf(X, tree) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> tree </code></p>
+    </div>
+    <div class = "argRight">
+      <p>an n sample by d feature matrix (preferable) or data frame which was used to
+        train the provided forest.</p>
+      <p>a tree from a forest returned by RerF.</p>
+    </div>
+    <h5> Value </h5>
+    <p> similarity based on one tree </p>
+  </div>
+    
+  
+  <span class="anchor" id = "StrCorr"></span> 
+  <div class = "docSect">
+    <h4> StrCorr - Compute tree strength and correlation</h4>
+    <h5> Description </h5>
+    <p> Computes estimates of tree strength and correlation according to the definitions in Breiman’s 2001
+      Random Forests paper.</p>
+    <h5> Usage </h5>
+    <p><code> StrCorr(Yhats, Y) </code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> Yhats </code></p>
+      <p><code> Y </code></p>
+    </div>
+    <div class = "argRight">
+      <p>predicted class labels for each tree in a forest</p>
+      <p> true class labels.</p>
+    </div>
+    <h5> Examples </h5>
+      <p><code> library(rerf) </code></p>
+      <p><code> trainIdx <- c(1:40, 51:90, 101:140) </code></p>
+      <p><code> X <- as.matrix(iris[,1:4]) </code></p>
+      <p><code> Y <- iris[[5]] </code></p>
+      <p><code> forest <- RerF(X[trainIdx, ], Y[trainIdx], num.cores = 1L) </code></p>
+      <p><code> predictions <- Predict(X[-trainIdx, ], forest, num.cores = 1L, aggregate.output = FALSE) </code></p>
+      <p><code> scor <- StrCorr(predictions, Y[-trainIdx]) </code></p>
+  </div>     
 </div>
