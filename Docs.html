@@ -449,7 +449,6 @@ description: "Lumberjack Docs"
       <p><code> fun </code></p>
       <p><code> mat.options </code></p>
       <p><code> rank.transform </code></p>
-      <p><code> trees </code></p>
       <p><code> store.oob </code></p>
       <p><code> store.impurity </code></p>
       <p><code> progress </code></p>
@@ -472,7 +471,7 @@ description: "Lumberjack Docs"
       <p> a non-zero value means a random sample of X will be used during tree creation. If replacement = FALSE the bagging value determines the percentage of samples to leave out-of-bag. If replacement = TRUE the non-zero bagging value is ignored. (bagging=.2)</p>
       <p> if TRUE then n samples are chosen, with replacement, from X. (replacement=TRUE) </p>
       <p> if TRUE then class sample proportions are maintained during the random sampling. Ignored if replacement = FALSE. (stratify = FALSE). </p>
-      <p> a function that creates the random projection matrix. If NULL and cat.map is NULL, then RandMat is used. If NULL and cat.map is not NULL, then
+      <p style = "height: 200px;"> a function that creates the random projection matrix. If NULL and cat.map is NULL, then RandMat is used. If NULL and cat.map is not NULL, then
         RandMatCat is used, which adjusts the sampling of features when categorical features have been one-of-K encoded. If a custom function is to be used, then it
         must return a matrix in sparse representation, in which each nonzero is an array of the form (row.index, column.index, value). See RandMat or RandMatCat for
         details. (fun=NULL)</p>
