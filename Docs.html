@@ -368,10 +368,10 @@ description: "Lumberjack Docs"
     <p><code> RandMat(mat.options) </code></p>
     <h5> Arguments </h5>
     <div class = "argLeft">
-      <p style ="height:400px;"><code> mat.options </code></p>
+      <p style ="height:500px;"><code> mat.options </code></p>
     </div>
     <div class = "argRight">
-      <p style ="height:400px;"> a list of parameters specifying the distribution for sampling the random matrix.
+      <p style ="height:500px;"> a list of parameters specifying the distribution for sampling the random matrix.
         The first element specifies the dimensionality p of the data (# features). The
         second element specifies the number of columns d in the random matrix. The
         third element specifies the "type" of distribution. The types of distributions supported
@@ -419,8 +419,94 @@ description: "Lumberjack Docs"
     </div>
     <h5> Value </h5>
     <p> random.matrix </p>
+  </div>
+    
+  <span class="anchor" id = "Rerf"></span> 
+  <div class = "docSect">
+    <h4>RerF - RerF forest Generator</h4>
+    <h5> Description </h5>
+    <p> Creates a decision forest based on an input matrix and class vector. This is the main function in the
+      rerf package. </p>
+    <h5> Usage </h5>
+    <p><code> RerF(X, Y, min.parent = 6L, trees = 500L,
+      max.depth = ceiling(log2(nrow(X))), bagging = 0.2, replacement = TRUE,
+      stratify = FALSE, fun = NULL, mat.options = list(p =
+      ifelse(is.null(cat.map), ncol(X), length(cat.map)), d =
+      ceiling(sqrt(ncol(X))), random.matrix = "binary", rho =
+      ifelse(is.null(cat.map), 1/ncol(X), 1/length(cat.map)), prob = 0.5),
+      rank.transform = FALSE, store.oob = FALSE, store.impurity = FALSE,
+      progress = FALSE, rotate = F, num.cores = 0L, seed = sample(0:1e+08,
+      1), cat.map = NULL, rfPack = FALSE)</code></p>
+    <h5> Arguments </h5>
+    <div class = "argLeft">
+      <p><code> X </code></p>
+      <p><code> Y </code></p>
+      <p><code> min.parent </code></p>
+      <p><code> trees </code></p>
+      <p><code> max.depth </code></p>
+      <p><code> bagging </code></p>
+      <p><code> replacement </code></p>
+      <p><code> stratify </code></p>
+      <p><code> fun </code></p>
+      <p><code> mat.options </code></p>
+      <p><code> rank.transform </code></p>
+      <p><code> trees </code></p>
+      <p><code> store.oob </code></p>
+      <p><code> store.impurity </code></p>
+      <p><code> progress </code></p>
+      <p><code> rotate </code></p>
+      <p><code> num.cores </code></p>
+      <p><code> seed </code></p>
+      <p><code> cat.map </code></p>
+      <p><code> rfPack </code></p>
+      <p><code> prob </code></p>
+
+    </div>
+    <div class = "argRight">
+      <p> an n by d numeric matrix (preferable) or data frame. The rows correspond to
+        observations and columns correspond to features. </p>
+      <p> an n length vector of class labels. Class labels must be integer or numeric and
+        be within the range 1 to the number of classes. </p>
+      <p> the minimum splittable node size. A node size < min.parent will be a leaf node. (min.parent = 6) </p>
+      <p> the number of trees in the forest. (trees=500) </p>
+      <p> the longest allowable distance from the root of a tree to a leaf node (i.e. the maximum allowed height for a tree). If max.depth=0, the tree will be allowed to grow without bound. (max.depth=ceiling(log2(nrow(X))) ) </p>
+      <p> a non-zero value means a random sample of X will be used during tree creation. If replacement = FALSE the bagging value determines the percentage of samples to leave out-of-bag. If replacement = TRUE the non-zero bagging value is ignored. (bagging=.2)</p>
+      <p> if TRUE then n samples are chosen, with replacement, from X. (replacement=TRUE) </p>
+      <p> if TRUE then class sample proportions are maintained during the random sampling. Ignored if replacement = FALSE. (stratify = FALSE). </p>
+      <p> a function that creates the random projection matrix. If NULL and cat.map is NULL, then RandMat is used. If NULL and cat.map is not NULL, then
+        RandMatCat is used, which adjusts the sampling of features when categorical features have been one-of-K encoded. If a custom function is to be used, then it
+        must return a matrix in sparse representation, in which each nonzero is an array of the form (row.index, column.index, value). See RandMat or RandMatCat for
+        details. (fun=NULL)</p>
+      <p> a list of parameters to be used by fun. (mat.options=c(ncol(X), round(ncol(X)^.5),1L, 1/ncol(X))) </p>
+      <p> if TRUE then each feature is rank-transformed (i.e. smallest value becomes 1 and largest value becomes n) (rank.transform=FALSE) </p>
+      <p> if TRUE then the samples omitted during the creation of a tree are stored as part of the tree. This is required to run OOBPredict(). (store.oob=FALSE)</p>
+      <p> if TRUE then the decrease in impurity is stored for each split. This is required to run FeatureImportance() (store.impurity=FALSE) </p>
+      <p> if TRUE then a pipe is printed after each tree is created. This is useful for large datasets. (progress=FALSE) </p>
+      <p><code> if TRUE then the data matrix X is uniformly randomly rotated for each tree. (rotate=FALSE) </code></p>
+      <p><code> the number of cores to use while training. If num.cores=0 then 1 less than the number of cores reported by the OS are used. (num.cores=0) </code></p>
+      <p><code> the seed to use for training the forest. For two runs to match you must use the same seed for each run AND you must also use the same number of cores for
+        each run. (seed=sample((0:100000000,1))) </code></p>
+      <p><code> a list specifying which columns in X correspond to the same one-of-K encoded feature. Each element of cat.map is a numeric vector specifying the K column
+        indices of X corresponding to the same categorical feature after one-of-K encoding. All one-of-K encoded features in X must come after the numeric features.
+        The K encoded columns corresponding to the same categorical feature must be placed contiguously within X. The reason for specifying cat.map is to adjust
+        for the fact that one-of-K encoding cateogorical features results in a dilution of numeric features, since a single categorical feature is expanded to K binary features.
+        If cat.map = NULL, then RerF assumes all features are numeric (i.e. none of the features have been one-of-K encoded). </code></p>
+      <p><code> boolean flag to determine whether to pack a random forest in order to improve
+        prediction speed. This flag is only applicable when training a forest with the "rf"
+        option. (rfPack = FALSE) </code></p>
+      <p><code> the probability of sampling +1 in the default random matrix function </code></p>
+    </div>
+    <h5> Value </h5>
+      <p> forest </p>
+    <h5> Examples </h5>
+      <p><code> FILL IN </code></p>
+      <p><code> trainIdx <- c(1:40, 51:90, 101:140) </code></p>
+      <p><code> X <- as.matrix(iris[,1:4]) </code></p>
+      <p><code> Y <- as.numeric(iris[,5]) </code></p>
+      <p><code> forest <- RerF(X[trainIdx, ], Y[trainIdx], num.cores = 1L, rank.transform = TRUE) # Using a set of samples with unknown classification </code></p>
+      <p><code> predictions <- Predict(X[-trainIdx, ], forest, num.cores = 1L, Xtrain = X[trainIdx, ]) </code></p>
+      <p><code> error.rate <- mean(predictions != Y[-trainIdx]) </code></p>
   </div>  
-  <div id = "RerF">RerF - RerF forest Generator</div>
     
   <span class="anchor" id = "RunFeatureImportance"></span> 
   <div class = "docSect">
