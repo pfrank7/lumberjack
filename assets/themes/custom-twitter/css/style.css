@@ -27,7 +27,7 @@ h3 {
   background-position: center;
   background-size: 100%;
   background-image:
-     linear-gradient(175deg, #b3cde0, white);
+     linear-gradient(80deg, #b3cde0, white);
   /*background-color: #b3cde0;*/
   height:100vh;
   /*background-attachment: fixed;*/
@@ -153,7 +153,6 @@ h3 {
 .topbar div>ul .active>a, .nav .active>a {
    background-color: rgb(42, 42, 42);
 }
-
 /* blog */
 .bloglist ul {
   margin-top: 10px;
@@ -776,6 +775,7 @@ h3 {
 }
 .cont_row {
 	background-color: #404040;
+	padding: 15px;
 }
 .detail {
 	height:30%;
