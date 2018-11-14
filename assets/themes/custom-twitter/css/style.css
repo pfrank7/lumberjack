@@ -710,11 +710,11 @@ h3 {
 .mySlides {
 	display:none;
 	text-align:center;
-	height:300px;
+	height:250px;
 }
 .mySlides img {
-	height: 200px;
-	width:200px;
+	height: 225px;
+	width:350px;
 .wht {
     background-color:white;
 }
