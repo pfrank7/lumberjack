@@ -774,7 +774,9 @@ h3 {
 	padding:15px;
 }
 .cont_row {
-	background-color: white;
+	background-color: #ECECEC;
+	border:solid;
+	border-color:lightgrey;
 	padding: 15px;
 }
 .detail {
