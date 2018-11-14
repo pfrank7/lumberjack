@@ -28,7 +28,7 @@ h3 {
   background-size: 100%;
   margin: -10px;
   background-image:
-     linear-gradient(80deg, #b3cde0, white);
+     linear-gradient(180deg, #b3cde0, black);
   /*background-color: #b3cde0;*/
   /*background-attachment: fixed;*/
 }
