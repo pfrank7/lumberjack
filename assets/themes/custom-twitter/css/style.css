@@ -761,7 +761,7 @@ h3 {
     height:300px;
     padding:15px;
 }
-cont_details {
+.cont_details {
 	float: left;
 	width: 40%;
 	margin-left: 5%;
@@ -769,6 +769,6 @@ cont_details {
         color: white;
         background-color: #404040;
 }
-cont_row {
+.cont_row {
 	background-color: #404040;
 }
