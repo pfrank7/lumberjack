@@ -26,6 +26,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
+  margin: -10px;
   background-image:
      linear-gradient(80deg, #b3cde0, white);
   /*background-color: #b3cde0;*/
