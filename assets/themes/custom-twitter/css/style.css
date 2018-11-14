@@ -729,12 +729,12 @@ h3 {
 .arrow_left, .arrow_right, .badge {cursor:pointer}
 .arrow_left {
 	float:left;
-	color:white;
+	color:#404040;
 	font-size: 20pt;
 }
 .arrow_right {
 	float:right;
-	color:white;
+	color:#404040;
 	font-size: 20pt;
 }
 .badge {
@@ -747,13 +747,13 @@ h3 {
     padding-right:8px;
     text-align:center;
     border-radius: 15px;
-    border-color:white;
+    border-color: #404040;
     border:solid;
 }
 .cont_display {
     text-align:center;
     color:white;
-    background-color:#404040;
+    /*background-color:#404040;*/
     width:50%;
     float: right;
     transform:translate(0%,0%);
@@ -770,13 +770,17 @@ h3 {
 	margin-left: 5%;
 	text-align: center;
         color: white;
-        background-color: #404040;
+        /*background-color: #404040;*/
 	padding:15px;
 }
 .cont_row {
-	background-color: #404040;
+	background-color: white;
 	padding: 15px;
 }
 .detail {
 	height:30%;
+	color: #404040;
+}
+.detail h3 {
+	color: #404040;
 }
