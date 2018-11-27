@@ -9,8 +9,8 @@ html, body {
 h3 {
   color: white;
 }
-.container > footer p {
-  text-align: center; /* center align it with the container */
+/*.container > footer p {
+  text-align: center;
 }
 
 .container {
@@ -19,8 +19,8 @@ h3 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
+}													DELETE ALL CONTAINER STUFF
+*/
 #banner-container {
   width: 100%;
   /*margin-top: 20px;*/
@@ -430,7 +430,7 @@ h3 {
 */
 .github-btn { border: 0; overflow: hidden }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -446,8 +446,8 @@ h3 {
   .container {
     width: 1170px;
   }
-}
-
+}												DELETE ALL CONTAINER STUFF
+*/
 .row {
   margin-right: -15px;
   margin-left: -15px;
