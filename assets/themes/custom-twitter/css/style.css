@@ -149,7 +149,9 @@ h3 {
 .topbar .btn {
   border: 0px;
 }
-
+.topbar {
+	background-color:black;
+}
 /* active color use default */
 .topbar div>ul .active>a, .nav .active>a {
    background-color: rgb(42, 42, 42);
@@ -448,11 +450,10 @@ h3 {
   }
 }												DELETE ALL CONTAINER STUFF
 */
-.row {
+/*.row {
   margin-right: -15px;
   margin-left: -15px;
 }
-/*
 .col-lg-4, .col-sm-4 {
   position: absolute;
   min-height: 1px;
