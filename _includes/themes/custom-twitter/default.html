@@ -32,19 +32,17 @@
 
   <body>
     <div class = "topbar">
-      <div class = "container">
-        <h3> Lumberjack </h3>
-      </div>
+      <h3> Lumberjack </h3>
     </div>
-    <div class="wrapper">
-      <div class="container">
+    <div>
+      <div class = "nav">
         <h2 id="logo-wrap">
           <a href="{{BASE_PATH}}" class="nav brand">
               <!--p> Lumberjack </p-->
               <!--img src="/lumberjack/images/logo/logo.png" width="70px"-->
           </a>
         </h2>
-        <ul class="nav  nav-pills" id="nav-bar">
+        <ul>
           {% assign pages_list = site.pages | sort:"order" %}
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
