@@ -156,6 +156,128 @@ h3 {
 .topbar div>ul .active>a, .nav .active>a {
    background-color: rgb(42, 42, 42);
 }
+.nav {
+    background: #f4f4f4;
+    /*     display: inline-block; */
+    float: left;
+    width: 210px;
+    min-height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: block;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 3px 0 3px 210px;
+    border-color: transparent transparent transparent #e1e1e1;
+    bottom: -4px;
+    left: 0px;
+    position: absolute;
+}
+
+.logo {
+    padding: 22px 20px;
+    display: block;
+    background: white;
+    position: relative;
+}
+
+.logo:hover h4 {
+    color: #318dde;
+}
+
+.logo img {
+    display: inline-block;
+    float: left;
+}
+
+.logo h4 {
+    display: inline-block;
+    float: left;
+    padding-left: 13px;
+    padding-top: 4px;
+    color: #020202;
+    transition: 0.3s ease all;
+}
+
+.nav ul {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.nav ul li {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.nav ul li h5 {
+    background: none;
+    color: #144b7c;
+    padding: 13px 0px 13px 22px;
+    font-size: 18px;
+    transition: 0.3s ease all;
+}
+
+.nav ul li ul {
+    margin-top: -.5em;
+    z-index: 2;
+    background: #f4f4f4;
+}
+
+.nav ul li ul li {
+    border-bottom: none;
+}
+
+.nav ul li ul:last-child {
+    margin-bottom: .8em;
+}
+
+.nav ul li ul li h6 {
+    text-indent: 15%;
+}
+
+.nav ul li ul li a:hover {
+    color: #222;
+}
+
+.nav ul li ul li h6:hover {
+    background: white;
+}
+
+.nav ul li h5:hover {
+    background: white;
+}
+
+.nav ul.bottom {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.nav ul.bottom li {
+    border-bottom: none;
+}
+
+.nav ul.bottom li h5 {
+    color: #494949;
+    font-size: 14px;
+}
+
+.nav ul.bottom li h5.copy {
+    background: #494949;
+    color: white;
+    padding: 13px 0px;
+    text-align: center;
+}
+
+.nav ul.bottom li h5.copy:hover {
+    background: white;
+    color: #494949;
+}
 /* blog */
 .bloglist ul {
   margin-top: 10px;
