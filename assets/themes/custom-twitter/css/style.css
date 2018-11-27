@@ -2,9 +2,10 @@
 html, body {
 
 }
-body {
+/*body {
   padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
-}
+/*} 													DELETE THISSSSS
+*/
 h3 {
   color: white;
 }
