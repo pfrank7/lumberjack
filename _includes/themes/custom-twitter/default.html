@@ -36,13 +36,13 @@
     </div>
     <div class = "nav">
       <div class = "links">
-        <h2 id="logo">
+        <div id="logo">
           <a href="{{BASE_PATH}}">
-            <h4> Lumberjack </h4>
+            <h2> Lumberjack </h2>
             <div class = "triangle"></div>
               <!--img src="/lumberjack/images/logo/logo.png" width="70px"-->
           </a>
-        </h2>
+        </div>
         <ul>
           {% assign pages_list = site.pages | sort:"order" %}
           {% assign group = 'navigation' %}
