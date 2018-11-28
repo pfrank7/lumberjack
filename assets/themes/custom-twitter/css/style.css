@@ -248,6 +248,7 @@ h6 {
 .logo img {
     display: inline-block;
     float: left;
+    width:20px;
 }
 
 .logo h4 {
