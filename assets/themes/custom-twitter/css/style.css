@@ -6,6 +6,87 @@ html, body {
   padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
 /*} 													DELETE THISSSSS
 */
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Gentona Book';
+    src: url("../fonts/gentona/Gentona-Book.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-Book.woff") format("woff"), url("../fonts/gentona/Gentona-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona';
+    src: url("../fonts/gentona/Gentona-Medium.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-Medium.woff") format("woff"), url("../fonts/gentona/Gentona-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Italic';
+    src: url("../fonts/gentona/Gentona-MediumItalic.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-MediumItalic.woff") format("woff"), url("../fonts/gentona/Gentona-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Book Italic';
+    src: url("../fonts/gentona/Gentona-BookItalic.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-BookItalic.woff") format("woff"), url("../fonts/gentona/Gentona-BookItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Bold';
+    src: url("../fonts/gentona/Gentona-Bold.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-Bold.woff") format("woff"), url("../fonts/gentona/Gentona-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Bold Italic';
+    src: url("../fonts/gentona/Gentona-BookItalic.eot");
+    src: local("☺"), url("../fonts/gentona/Gentona-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/gentona/Gentona-BoldItalic.woff") format("woff"), url("../fonts/gentona/Gentona-BoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Regular';
+    src: url("../fonts/quadon/Quadon-Regular.eot");
+    src: local("☺"), url("../fonts/quadon/Quadon-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/quadon/Quadon-Regular.woff") format("woff"), url("../fonts/quadon/Quadon-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Regular Italic';
+    src: url("../fonts/quadon/Quadon-RegularItalic.eot");
+    src: local("☺"), url("../fonts/quadon/Quadon-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quadon/Quadon-RegularItalic.woff") format("woff"), url("../fonts/quadon/Quadon-RegularItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Medium';
+    src: url("../fonts/quadon/Quadon-Medium.eot");
+    src: local("☺"), url("../fonts/quadon/Quadon-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/quadon/Quadon-Medium.woff") format("woff"), url("../fonts/quadon/Quadon-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Medium Italic';
+    src: url("../fonts/quadon/Quadon-MediumItalic.eot");
+    src: local("☺"), url("../fonts/quadon/Quadon-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/quadon/Quadon-MediumItalic.woff") format("woff"), url("../fonts/quadon/Quadon-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 h1, h2, h3, h4, h5 {
     font-weight: normal !important;
     text-transform: uppercase;
