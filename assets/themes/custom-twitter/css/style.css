@@ -207,6 +207,8 @@ h6 {
 .topbar {
 	background-color:black;
 	text-align:center;
+	position:fixed;
+	width:100%;
 }
 .topbar h2 {
     color: white;
