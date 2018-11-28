@@ -6,11 +6,7 @@ html, body {
   padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
 /*} 													DELETE THISSSSS
 */
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     font-weight: normal !important;
     text-transform: uppercase;
 }
@@ -24,9 +20,7 @@ h2 {
     font-family: "Quadon Regular", Rockwell, serif;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     font-family: "Gentona Bold", "Arial Bold", sans-serif;
 }
 
