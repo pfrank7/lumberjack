@@ -206,6 +206,7 @@ h6 {
 }
 .topbar {
 	background-color:black;
+	text-align:center;
 }
 /* active color use default */
 .topbar div>ul .active>a, .nav .active>a {
