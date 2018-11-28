@@ -216,6 +216,7 @@ h6 {
     font-size: 30px;
 }
 .nav {
+    top: 0px;
     background: #f4f4f4;
     /*     display: inline-block; */
     float: left;
