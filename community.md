@@ -8,7 +8,11 @@ description: "Lumberjack Community"
 ---
 
 {% include JB/setup %}
-
+<div class = "topbar">
+  <div class id = "banner-title">
+    <h2> community </h2>
+  </div>
+</div>
 # Community
 
 Welcome to the Lumberjack community.
