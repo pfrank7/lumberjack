@@ -7,8 +7,7 @@ group : navigation
 description: "Lumberjack Docs"
 ---
 {% include JB/setup %}
-<div>
-
+<div class = "col-sm-3">
 <div class="sidenav">
   <a href = "#About">About</a>
   <a href="#BuildTree">BuildTree</a>
@@ -28,7 +27,8 @@ description: "Lumberjack Docs"
   <a href="#RunPredictLeaf">RunPredictLeaf</a>
   <a href="#StrCorr">StrCorr</a>
 </div>
-
+</div>
+<div class = "col-sm-9">
 <div class="main">
   <h2>Package 'rerf'</h2>
   <p>Navigate through the links on the left. The full pdf documentation can be found on <a href = "https://cran.r-project.org/web/packages/rerf/rerf.pdf"> cran. </a></p>
@@ -637,4 +637,5 @@ description: "Lumberjack Docs"
       <p><code> predictions <- Predict(X[-trainIdx, ], forest, num.cores = 1L, aggregate.output = FALSE) </code></p>
       <p><code> scor <- StrCorr(predictions, Y[-trainIdx]) </code></p>
   </div>     
+</div>
 </div>
