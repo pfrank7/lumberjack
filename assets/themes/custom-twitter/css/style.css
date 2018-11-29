@@ -2,10 +2,6 @@
 html, body {
 
 }
-/*body {
-  padding-top: 60px; /* 40px to make the container go all the way to the bottom of the topbar */
-/*} 													DELETE THISSSSS
-*/
 @charset "UTF-8";
 
 @font-face {
@@ -139,28 +135,15 @@ h6 {
     font-weight: normal !important;
     margin: 0;
 }
-/*.container > footer p {
-  text-align: center;
-}
-
-.container {
-  width: 970px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}													DELETE ALL CONTAINER STUFF
-*/
 #banner-container {
   width: 100%;
   /*margin-top: 20px;*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
-  margin-left:230px;
   background-image:
      linear-gradient(180deg, #b3cde0, black);
-  /*background-color: #b3cde0;*/
+  background-color: #b3cde0;
   /*background-attachment: fixed;*/
 }
 
