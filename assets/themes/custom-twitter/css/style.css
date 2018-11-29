@@ -882,14 +882,15 @@ h6 {
 /************************** SIDEBAR FOR DOCS **************************/
 .sidenav {
     height: 100%;
-    width: 250px;
+    /*width: 250px;*/
+    padding:5px;
     position: fixed;
     z-index: 1;
-    /*top: 0;*/
-    left: auto;
+    /*top: 0;
+    left: auto;*/
     background-color: white;
     overflow-x: hidden;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     border-right: solid;
 }
 
@@ -906,7 +907,6 @@ h6 {
 }
 
 .main {
-    margin-left: 300px; /* Same as the width of the sidenav */
     margin-top: 20px;
 }
 
