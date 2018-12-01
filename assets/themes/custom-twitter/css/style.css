@@ -392,6 +392,29 @@ h6 {
     background: white;
     color: #494949;
 }
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+.nav .icon {
+  display: none;
+}
 /* blog */
 .bloglist ul {
   margin-top: 10px;
