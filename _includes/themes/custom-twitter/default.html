@@ -20,8 +20,11 @@
   -->
   <link href="/lumberjack/images/logo/logo.png" rel="icon" type="image/png"/>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-75982049-3"></script>
-  <script>
+  <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-75982049-3"></script-->
+  
+  <script src="https://github.com/pfrank7/lumberjack/new/master/assets/themes/custom-twitter/scripts/mobilenav.js"></script>
+
+  <!--script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -31,9 +34,9 @@
 </head>
 
   <body>
-    <div class = "nav">
+    <div class = "nav" id = "topnav">
       <div class = "links">
-        <a href="{{BASE_PATH}}" class = "logo">
+        <a href="{{BASE_PATH}}" class = "logo active">
           <img src="/lumberjack/images/logo/logo.png">
           <h4> Lumberjack </h4>
           <div class = "triangle"></div>
@@ -53,6 +56,13 @@
             <a href="https://github.com/neurodata/lumberjack"><h5>Github</h5></a> 
           </li>
         </ul>
+      </div>
+    </div>
+    <div id = "mobilenav">
+      <div id = "mobilelinks">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
     {{ content }}
