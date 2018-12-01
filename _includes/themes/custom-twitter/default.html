@@ -34,7 +34,7 @@
 </head>
 
   <body>
-    <div class = "nav" id = "topnav">
+    <div class = "nav">
       <div class = "links">
         <a href="{{BASE_PATH}}" class = "logo active">
           <img src="/lumberjack/images/logo/logo.png">
@@ -57,13 +57,27 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div id = "mobilenav">
-      <div id = "mobilelinks">
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    <div id=mobile-nav class=visible>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> 
+    <div class=mobile-links> 
+      <ul> <li> <a href=/data/ >
+        <h5>data</h5></a> </li> 
+        <li> <a href=# class=expand_projects><h5>Projects</h5></a> 
+        </li> 
+        <li> <a href=/tools/ ><h5>tools</h5></a> 
+        </li> 
+        <li> <a href=/help/ ><h5>help</h5></a> 
+        </li> <li> <a href=https://bitsandbrains.io/ ><h5>Blog</h5></a> 
+        </li> <li> <a href=/about/ ><h5>about</h5></a> 
+        </li> 
+      </ul> 
+    </div> 
     </div>
     {{ content }}
     {% include JB/analytics %}
