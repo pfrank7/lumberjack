@@ -573,6 +573,133 @@ h6 {
 .mobile-links li a.hero-link:hover {
     color: white;
 }
+@media only screen and (max-width: 1024px) {
+    .nav {
+        background: #f4f4f4;
+        display: block;
+        float: none;
+        width: 100%;
+        min-height: 30px;
+        position: fixed;
+        z-index: 999;
+    }
+
+    /*.main {
+        display: block;
+        float: none;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-top: 76px;
+    }
+*/
+    .nav .links {
+        display: none;
+    }
+
+    .nav .triangle {
+        display: none;
+    }
+
+    .mobile-links {
+        display: block;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+
+    .nav ul li {
+        border-bottom: none;
+    }
+
+    .mobile-links li a {
+        color: white;
+    }
+
+    .nav ul li h5 {
+        color: white;
+        font-size: 27px;
+        padding-left: 0px;
+    }
+
+    .nav ul li h5:hover {
+        background: none;
+        color: #16a0ef;
+    }
+}
+/* MEDIA QUERIES - HEIGHT
+---------------------------------------------- */
+@media only screen and (max-height: 570px) {
+    .nav ul li h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-height: 470px) {
+    .mobile-links ul {
+        margin-top: 20px;
+    }
+
+    .mobile-links li {
+        padding: 5px 0px;
+    }
+
+    .nav ul li h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    .nav {
+        background: #f4f4f4;
+        display: block;
+        float: none;
+        width: 100%;
+        min-height: 30px;
+        position: fixed;
+        z-index: 999;
+    }
+
+/*   .main {
+        display: block;
+        float: none;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-top: 76px;
+    }*/
+
+    .nav .links {
+        display: none;
+    }
+
+    .nav .triangle {
+        display: none;
+    }
+
+    #mobile-nav {
+        display: block;
+    }
+
+   /* .main .wrap {
+        padding-right: 0px;
+    }*/
+}
+
+@media only screen and (max-height: 390px) {
+    .nav ul li h5 {
+        font-size: 17px;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-height: 390px) {
+    .nav ul li h5 {
+        font-size: 15px;
+        padding: 3px;
+    }
+}
 /* blog */
 .bloglist ul {
   margin-top: 10px;
