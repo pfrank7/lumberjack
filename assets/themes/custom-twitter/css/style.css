@@ -584,14 +584,13 @@ h6 {
         z-index: 999;
     }
 
-    /*.main {
+    .main {
         display: block;
         float: none;
         max-width: 100%;
         padding-left: 0px;
         padding-top: 76px;
     }
-*/
     .nav .links {
         display: none;
     }
@@ -662,13 +661,13 @@ h6 {
         z-index: 999;
     }
 
-/*   .main {
+   .main {
         display: block;
         float: none;
         max-width: 100%;
         padding-left: 0px;
         padding-top: 76px;
-    }*/
+    }
 
     .nav .links {
         display: none;
@@ -682,9 +681,9 @@ h6 {
         display: block;
     }
 
-   /* .main .wrap {
+   .main {
         padding-right: 0px;
-    }*/
+    }
 }
 
 @media only screen and (max-height: 390px) {
