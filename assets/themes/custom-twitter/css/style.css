@@ -1208,7 +1208,7 @@ h6 {
     color: black;
 }
 
-.main {
+.main_content {
     margin-top: 20px;
 }
 
@@ -1230,14 +1230,14 @@ h6 {
     border-top: double;
     border-bottom: double;
 }
-.main h3 {
+.main_content h3 {
     color: black;
     text-align:center;
 }
-.main h4 {
+.main_content h4 {
     text-align:center;
 }
-.main h2 {
+.main_content h2 {
     text-align:center;
 }
 .aboutSect p {
