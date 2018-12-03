@@ -66,17 +66,20 @@
       <span></span>
     </div> 
     <div class="mobile-links"> 
-      <ul> <li> <a href="/data/" >
-        <h5>data</h5></a> </li> 
-        <li> <a href="#" class="expand_projects"><h5>Projects</h5></a> 
-        </li> 
-        <li> <a href="/tools/" ><h5>tools</h5></a> 
-        </li> 
-        <li> <a href="/help/" ><h5>help</h5></a> 
-        </li> <li> <a href="https://bitsandbrains.io/" ><h5>Blog</h5></a> 
-        </li> <li> <a href="/about/" ><h5>about</h5></a> 
-        </li> 
-      </ul> 
+      <ul>
+          {% assign pages_list = site.pages | sort:"order" %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
+          <li> 
+            <a href="https://github.com/neurodata/lumberjack/blob/staging/README.md"><h5>About</h5></a>
+          </li>
+          <li> 
+            <a href="https://bitsandbrains.io/"><h5>Blog</h5></a> 
+          </li>
+          <li> 
+            <a href="https://github.com/neurodata/lumberjack"><h5>Github</h5></a> 
+          </li>
+        </ul> 
     </div> 
     </div>
   <div class = "main">
