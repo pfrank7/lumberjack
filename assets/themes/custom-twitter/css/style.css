@@ -588,7 +588,7 @@ h6 {
 	margin-left:0px;
     }
     .container {
-        margin-left:0px;
+        margin-left:auto;
     }
     .main {
         display: block;
@@ -670,7 +670,7 @@ h6 {
 	margin-left:0px;
     }
     .container {
-	margin-left:0px;
+	margin-left:auto;
     }
    .main {
         display: block;
