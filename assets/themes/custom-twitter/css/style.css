@@ -193,7 +193,6 @@ h6 {
    font-size: 16px;
    line-height: 24px;
 }
-
 .content ul {
    margin-top:8px;
    font-size: 16px;
@@ -202,6 +201,10 @@ h6 {
 
 .content li {
    margin-bottom: 7px;
+}
+.content h3, p {
+	display: block;
+	text-align:center;
 }
 .link-btn {
     background-color: white;
@@ -952,9 +955,6 @@ h6 {
 .highlight {
   background-color: #f8f8f8;
 }*/
-.content h3, p {
-	display: block;
-}
 /* COMMENTING OUT SECTION TOUT STUFF */
 
 /*
