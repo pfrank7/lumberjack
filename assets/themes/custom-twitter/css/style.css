@@ -742,7 +742,7 @@ h6 {
 	color:#FFF;
 }
 
-
+/*
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {
@@ -951,6 +951,9 @@ h6 {
 }
 .highlight {
   background-color: #f8f8f8;
+}*/
+.content h3, p {
+	display: block;
 }
 /* COMMENTING OUT SECTION TOUT STUFF */
 
