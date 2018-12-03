@@ -13,14 +13,14 @@ description: "Lumberjack Community"
     <h2> community </h2>
   </div>
 </div>
-# Community
+### Community
 
 Welcome to the Lumberjack community.
 
 <br>
 
 
-## Discuss Forum
+#### Discuss Forum
 
 A discussion forum for Lumberjack related topics is in the works!
 
@@ -28,7 +28,7 @@ A discussion forum for Lumberjack related topics is in the works!
 
 <br>
 
-## Roadmap
+#### Roadmap
 
 Check out the public roadmap to see where Lumberjack is headed. Please reach out if you are interested in working on anything not on the roadmap. 
 
@@ -37,7 +37,7 @@ Check out the public roadmap to see where Lumberjack is headed. Please reach out
 <br>
 
 
-## Github Issues
+#### Github Issues
 Lumberjack uses Github issues to track bugs and roadmap discussion.
 
 <a href="https://github.com/neurodata/lumberjack/issues" class="link-btn">Github Issue Tracker</a>
@@ -45,14 +45,14 @@ Lumberjack uses Github issues to track bugs and roadmap discussion.
 <br>
 
 
-## Contributing
+#### Contributing
 Interested in joining the Lumberjack team? Review the contibuting guidelines here. 
 
 <a href="https://github.com/neurodata/lumberjack/blob/staging/CONTRIBUTING.md" class="link-btn">Lumberjack Contributor Guideline</a>
 
 <br>
 
-## Twitter
+#### Twitter
 
 <a href="https://twitter.com/neuro_data" class="twitter-follow-button" data-show-count="false">Follow @neuro_data</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
