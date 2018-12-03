@@ -585,7 +585,10 @@ h6 {
         z-index: 999;
     }
     #banner-title {
-	margin-left:none;
+	margin-left:0px;
+    }
+    .container {
+        margin-left:0px;
     }
     .main {
         display: block;
@@ -664,7 +667,10 @@ h6 {
         z-index: 999;
     }
     #banner-title {
-	margin-left:none;
+	margin-left:0px;
+    }
+    .container {
+	margin-left:0px;
     }
    .main {
         display: block;
