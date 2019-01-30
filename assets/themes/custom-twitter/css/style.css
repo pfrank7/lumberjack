@@ -794,9 +794,10 @@ h6 {
 
 .main_content {
     margin-top: 20px;
-    margin-left: 25%;
 }
-
+.col_sm_9 {
+	margin-left:25%;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
