@@ -796,7 +796,7 @@ h6 {
     margin-top: 20px;
     width: 75%;
 }
-.col_sm_9 {
+.col-sm-9 {
 	margin-left:25%;
 }
 @media screen and (max-height: 450px) {
