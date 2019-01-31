@@ -35,13 +35,21 @@
 
   <body>
     <div class = "nav">
+      <div class = "logo clearfix active">
+        <a href="{{BASE_PATH}}"> 
+          <img src="/lumberjack/images/logo/logo.png"> 
+          <h4> Lumberjack </h4> 
+          <div class="triangle">
+          </div> 
+        </a>
+      </div>
       <div class = "links">
-        <a href="{{BASE_PATH}}" class = "logo active">
+        <!--a href="{{BASE_PATH}}" class = "logo active">
           <img src="/lumberjack/images/logo/logo.png">
           <h4> Lumberjack </h4>
           <div class = "triangle"></div>
               <!--img src="/lumberjack/images/logo/logo.png" width="70px"-->
-        </a>
+        <!--/a-->
         <ul>
           {% assign pages_list = site.pages | sort:"order" %}
           {% assign group = 'navigation' %}
