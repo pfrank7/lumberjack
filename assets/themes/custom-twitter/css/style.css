@@ -849,11 +849,10 @@ h6 {
 .mySlides {
 	display:none;
 	text-align:center;
-	height:250px;
 }
 .mySlides img {
-	height: 225px;
-	width:350px;
+    height: 75%;
+    width: 75%;
 }
 .wht {
     background-color:#404040;
