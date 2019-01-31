@@ -213,7 +213,7 @@ h6 {
 }
 .content h3, p, h4 {
 	display: block;
-	text-align:justify;
+	text-align:center;
 }
 .link-btn {
     background-color: white;
