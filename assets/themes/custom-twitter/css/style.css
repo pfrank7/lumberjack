@@ -600,9 +600,6 @@ h6 {
         position: fixed;
         z-index: 999;
     }
-/*    #banner-title {
-	margin-left:0px;
-    }*/
     .container {
         margin-left:auto;
     }
@@ -682,9 +679,6 @@ h6 {
         position: fixed;
         z-index: 999;
     }
-/*    #banner-title {
-	margin-left:0px;
-    }*/
     .container {
 	margin-left:auto;
     }
@@ -926,4 +920,7 @@ h6 {
 }
 .detail h3 {
 	color: #404040;
+}
+.detail p {
+	margin:5%;
 }
