@@ -267,7 +267,7 @@ h6 {
 	width:100%;
 	top:0px;
 	z-index: 2;
-	position: absolute;
+	position: relative;
 }
 .topbar h2 {
     color: white;
