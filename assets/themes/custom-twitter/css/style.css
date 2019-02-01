@@ -906,12 +906,12 @@ h6 {
 }
 .detail {
 	height:30%;
-	color: #404040;
+	/*color: #404040;*/
 	margin-top:5%;
 }
-.detail h3 {
+/*.detail h3 {
 	color: #404040;
-}
+}*/
 .detail p {
 	margin:5%;
 }
