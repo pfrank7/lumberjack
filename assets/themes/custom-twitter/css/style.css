@@ -814,9 +814,9 @@ h6 {
 .main_content p {
 	text-align: justify;
 }
-/*.col-sm-9 {
-	margin-left:25%;
-}*/
+.col-sm-11 {
+	margin-left:130px;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
