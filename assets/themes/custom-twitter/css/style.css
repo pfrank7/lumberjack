@@ -1,6 +1,7 @@
 /* Override some defaults */
 html, body {
-	background-color: #29282e
+	background-color: #29282e;
+	color:white;
 }
 @charset "UTF-8";
 
