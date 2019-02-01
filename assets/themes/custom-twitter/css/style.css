@@ -782,18 +782,22 @@ h6 {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
-    background-color: #111;
+    margin-left: -15px;
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 100px;
+    opacity: .9;
 }
 .sidenav a {
     padding: 6px 6px 6px 32px;
-    text-decoration: none;
+    text-decoration:none;
     font-size: 15px;
-    /*color: #818181;*/
+    color: white;
     display: block;
+}
+.sidenav a:hover {
+	color: grey;
 }
 .menu_open {
 	position:fixed;
