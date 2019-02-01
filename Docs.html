@@ -8,8 +8,11 @@ description: "Lumberjack Docs"
 ---
 {% include JB/setup %}
 <div class = "col-sm-3">
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<div class = "menu_open">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
 <div class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href = "#About">About</a>
   <a href="#BuildTree">BuildTree</a>
   <a href="#ComputeSimilarity">ComputeSimilarity</a>
