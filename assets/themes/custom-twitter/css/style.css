@@ -940,8 +940,13 @@ input[type="submit"]:hover {
     background-color: white;
     border-color: white;
 }
-
-.link-btn {
+a:hover {
+	text-decoration:none;
+}
+#banner-btn {
+	width:60%;
+}
+/*.link-btn {
     background-color: white;
     border: 2px solid #555555;
     border-radius: 8px;
@@ -957,11 +962,8 @@ input[type="submit"]:hover {
     cursor: pointer;
     color: black;
 }
-#banner-btn {
-	width:60%;
-}
 .link-btn:hover {
     background-color: #555555;
     color: white;
     text-decoration: none;
-}
+}*/
