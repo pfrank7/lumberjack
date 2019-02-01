@@ -805,7 +805,7 @@ h6 {
     margin-top: 20px;
     width: 75%;
 }
-.main_content p h2 h3 {
+.main_content p, h2, h3 {
 	text-align: justify;
 }
 .col-sm-9 {
