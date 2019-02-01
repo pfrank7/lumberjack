@@ -8,7 +8,7 @@ description: "Lumberjack Docs"
 ---
 {% include JB/setup %}
 <div class = "col-sm-1">
-  <div class = "menu_open">
+  <div class = "menu_open" id = "myMenu" >
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; menu</span>
   </div>
 </div>
@@ -646,9 +646,11 @@ description: "Lumberjack Docs"
 <script>
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("myMenu").style.opacity = "0";
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("myMenu").style.opacity = "1";
 }
 </script>
