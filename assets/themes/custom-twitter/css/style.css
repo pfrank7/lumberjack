@@ -968,3 +968,12 @@ a:hover {
     color: white;
     text-decoration: none;
 }*/
+/************ COMMUNITY PAGE**********/
+.left_comm {
+	width:50%;
+	float:left;
+}
+.right_comm {
+	width:40%;
+	float:right;
+}
