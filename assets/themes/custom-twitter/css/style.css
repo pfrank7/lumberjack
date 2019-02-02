@@ -808,10 +808,6 @@ h6 {
 .argRight p {
     height: 80px;
 }
-.docSect h4 {
-    border-top: double;
-    border-bottom: double;
-}
 .main_content h3 {
     text-align:center;
 }
