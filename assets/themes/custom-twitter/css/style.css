@@ -924,7 +924,7 @@ p a:hover:not(.button) {
 }
 a.button {
     display: inline-block;
-    height: 46px;
+    height: auto;
     font: 18px/44px "Gentona Bold", "Arial Bold", sans-serif;
     color: #020202;
     background-color: #99B4C6;
