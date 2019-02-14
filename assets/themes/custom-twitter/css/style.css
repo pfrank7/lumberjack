@@ -243,14 +243,14 @@ h6 {
   border: 0px;
 }
 .topbar {
-	background-color:black;
+	background-color:#f4f4f4;
 	width:100%;
 	top:0px;
 	z-index: 2;
 	position: relative;
 }
 .topbar h2 {
-    color: white;
+    color: #144b7c;
     text-align: center;
     padding: 20px 30px;
     margin: 0px;
