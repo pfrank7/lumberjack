@@ -16,6 +16,7 @@
     <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Le fav and touch icons -->
+  
   <!-- Update these with your own images
   -->
   <!--link href="/lumberjack/images/logo/logo.png" rel="icon" type="image/png"/-->
@@ -34,7 +35,15 @@
 </head>
 
   <body>
-    
+    <div class = "topbar">
+      <div class = "links">
+        <h2> {{ page.title }} </h2>
+          <nav class = "site_nav">
+            <a href = "https://neurodata.io/" target = "_blank"> NeuroData </a>
+            <a href = "https://github.com/neurodata/RerF" target = "_blank"> GitHub </a>
+          </nav>
+      </div>
+    </div>
     <!-- OLD SIDE NAV -->
     <!--div class = "nav">
       <div class = "logo clearfix active">
