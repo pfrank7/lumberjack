@@ -295,9 +295,10 @@ h6 {
     margin-top: 0;
 }
 
-/*.nav ul li {
-    border-bottom: 1px solid #e1e1e1;
-}*/
+.nav ul li {
+    position: relative;
+    display: inline-block;
+}
 
 .nav ul li h5 {
     background: none;
@@ -827,7 +828,7 @@ h6 {
     }
 	
 }
-/**************** PANNING INFO *****************/
+/**************** PANNING DISPLAY BOX INFO *****************/
 .mySlides {
 	display:none;
 	text-align:center;
@@ -871,15 +872,10 @@ h6 {
 }
 .cont_display {
     text-align:center;
-    /*color:white;*/
-    /*background-color:#404040;*/
     width:50%;
     float: right;
     transform:translate(0%,0%);
     -ms-transform:translate(0%,0%);
-    /*border-radius:15px;
-    border-left:solid;
-    border-color: #404040;*/
     height:300px;
     padding:15px;
 }
@@ -902,9 +898,6 @@ h6 {
 	/*color: #404040;
 	margin-top:2.5%;*/
 }
-/*.detail h3 {
-	color: #404040;
-}*/
 .detail p {
 	margin:2.5%;
 }
