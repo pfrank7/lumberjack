@@ -338,7 +338,7 @@ h6 {
     background: white;
 }
 
-.nav ul.bottom {
+/*.nav ul.bottom {
     position: absolute;
     bottom: 0px;
     width: 100%;
@@ -364,7 +364,7 @@ h6 {
 .nav ul.bottom li h5.copy:hover {
     background: white;
     color: #494949;
-}
+}*/
 .links {
     padding-left: 1.5rem;
     box-sizing: border-box;
