@@ -141,9 +141,6 @@ h6 {
     box-sizing: border-box;
     /*margin-left: 230px;*/
 }
-.main {
-	padding-left: 230px;
-}
 #banner-container {
   width: 100%;
   /*margin-top: 20px;*/
@@ -902,8 +899,8 @@ h6 {
 }
 .cont_details {
 	float: left;
-	width: 40%;
-	margin-left: 5%;
+	/*width: 40%;*/
+	/*margin-left: 5%;*/
 	text-align: center;
         color: white;
         /*background-color: #404040;*/
@@ -916,14 +913,14 @@ h6 {
 }
 .detail {
 	height:30%;
-	/*color: #404040;*/
-	margin-top:5%;
+	/*color: #404040;
+	margin-top:2.5%;*/
 }
 /*.detail h3 {
 	color: #404040;
 }*/
 .detail p {
-	margin:5%;
+	margin:2.5%;
 }
 /************** Button formatting ************/
 p a:link:not(.button),
