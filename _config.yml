@@ -11,21 +11,21 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title :  "Lumberjack"
+title :  "RandomerForest"
 tagline:
 author :
   name :
 
 #
-production_url : https://pfrank7.github.io/lumberjack
+production_url : https://pfrank7.github.io/randomerforest
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
   version : 0.3.0
 
-  BASE_PATH : https://pfrank7.github.io/lumberjack
-  BLOG_PATH : https://pfrank7.github.io/lumberjack
+  BASE_PATH : https://pfrank7.github.io/randomerforest
+  BLOG_PATH : https://pfrank7.github.io/randomerforest
 
   sharing :
     provider : false
