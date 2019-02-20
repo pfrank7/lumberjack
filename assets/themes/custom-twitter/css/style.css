@@ -117,7 +117,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 30px;
     line-height: 1.2;
     color: #318dde;
     margin: 0;
@@ -661,7 +661,7 @@ p a:hover:not(.button) {
 a.button {
     display: inline-block;
     height: auto;
-    font: 18px/44px "Gentona Bold", "Arial Bold", sans-serif;
+    font: 25px/44px "Gentona Bold", "Arial Bold", sans-serif;
     color: #020202;
     background-color: #99B4C6;
     border: 2px solid #99B4C6;
