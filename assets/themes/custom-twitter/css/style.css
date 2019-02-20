@@ -355,7 +355,7 @@ a:hover {
     position: relative;
 }
 
-.logo:hover a h4 {
+.logo a h4:hover {
     color: #318dde;
 }
 .logo h4 {
