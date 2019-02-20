@@ -286,39 +286,6 @@ a {
     top: .7rem;
     display: flex;
 }
-/* MEDIA QUERIES - HEIGHT
----------------------------------------------- */
-@media only screen and (max-height: 570px) {
-    .nav ul li h5 {
-        font-size: 20px;
-        padding: 10px;
-    }
-}
-
-@media only screen and (max-height: 470px) {
-    .mobile-links ul {
-        margin-top: 20px;
-    }
-
-    .mobile-links li {
-        padding: 5px 0px;
-    }
-
-    .nav ul li h5 {
-        font-size: 20px;
-        padding: 10px;
-    }
-}
-
-/* blog */
-.bloglist ul {
-  margin-top: 10px;
-}
-
-.bloglist li {
-  margin-top: 4px;
-  margin-bottom: 25px;
-}
 .github-btn { border: 0; overflow: hidden }
 .cont_display {
     text-align:center;
