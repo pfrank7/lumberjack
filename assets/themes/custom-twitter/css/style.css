@@ -348,30 +348,6 @@ a:hover {
 	text-decoration:none;
 }
 
-/* MEDIA QUERIES - HEIGHT
----------------------------------------------- */
-@media only screen and (max-height: 570px) {
-    .nav ul li h5 {
-        font-size: 20px;
-        padding: 10px;
-    }
-}
-
-@media only screen and (max-height: 470px) {
-    .mobile-links ul {
-        margin-top: 20px;
-    }
-
-    .mobile-links li {
-        padding: 5px 0px;
-    }
-
-    .nav ul li h5 {
-        font-size: 20px;
-        padding: 10px;
-    }
-}
-
 .logo {
     padding: 22px 20px;
     display: block;
@@ -379,16 +355,9 @@ a:hover {
     position: relative;
 }
 
-.logo:hover h4 {
+.logo:hover a h4 {
     color: #318dde;
 }
-
-.logo img {
-    display: inline-block;
-    float: left;
-    width:20px;
-}
-
 .logo h4 {
     display: inline-block;
     float: left;
