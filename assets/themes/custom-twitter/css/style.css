@@ -286,6 +286,9 @@ a {
     top: .7rem;
     display: flex;
 }
+.links ul li a h5:hover {
+    color: black;
+}
 .github-btn { border: 0; overflow: hidden }
 .cont_display {
     text-align:center;
