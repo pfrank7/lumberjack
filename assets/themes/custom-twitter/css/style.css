@@ -347,3 +347,28 @@ input[type="submit"]:hover {
 a:hover {
 	text-decoration:none;
 }
+
+/* MEDIA QUERIES - HEIGHT
+---------------------------------------------- */
+@media only screen and (max-height: 570px) {
+    .nav ul li h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-height: 470px) {
+    .mobile-links ul {
+        margin-top: 20px;
+    }
+
+    .mobile-links li {
+        padding: 5px 0px;
+    }
+
+    .nav ul li h5 {
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
