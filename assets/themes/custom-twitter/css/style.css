@@ -219,31 +219,6 @@ a {
     z-index: 999;
     display: block;
 }
-.logo {
-    padding: 22px 20px;
-    display: block;
-    background: white;
-    position: relative;
-}
-
-.logo:hover h4 {
-    color: #318dde;
-}
-
-.logo img {
-    display: inline-block;
-    float: left;
-    width:20px;
-}
-
-.logo h4 {
-    display: inline-block;
-    float: left;
-    padding-left: 13px;
-    padding-top: 4px;
-    color: #020202;
-    transition: 0.3s ease all;
-}
 .clearfix:after {
     content: ".";
     display: block;
