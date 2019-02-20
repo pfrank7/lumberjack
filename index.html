@@ -42,56 +42,7 @@ description: "Randomer Forest"
          </p>
        </div>
      </div>
-      
-     <!-- OLD PANNING DISPLAY BOX -->
-     <!--div class="cont_display">
-          <div class="mySlides">
-            <img src = "images/tree1.jpg">
-          </div>
-          <div class="mySlides">
-            <img src = "images/tree2.jpg">
-          </div>
-          <div class="mySlides">
-            <img src = "images/tree3.jpg">
-          </div>
-          <div>
-            <div class="arrow_left" onclick="plusDivs(-1)"><i class="fa fa-angle-left"></i></div>
-            <div class="arrow_right" onclick="plusDivs(1)"><i class="fa fa-angle-right"></i></div>
-            <span class="badge demo hover-wht" onclick="currentDiv(1)"></span>
-            <span class="badge demo hover-wht" onclick="currentDiv(2)"></span>
-            <span class="badge demo hover-wht" onclick="currentDiv(3)"></span>
-          </div>
-    </div-->
    </div>
  </div>
 </div>
 </div>
-<!-- SCRIPT FOR PANNING DISPLAY BOX -->
-<!--script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace("wht", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " wht";
-}
-</script-->
