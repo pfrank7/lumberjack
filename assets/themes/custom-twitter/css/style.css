@@ -377,6 +377,9 @@ a:hover {
   h4 {
        font-size: 18px;
   }
+  h4 {
+       padding: 11px 5px;
+  }
   p {
     font-size: 14x;
   }
