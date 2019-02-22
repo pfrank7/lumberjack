@@ -256,11 +256,6 @@ a {
 .nav ul li ul li {
     border-bottom: none;
 }
-
-.nav ul li ul:last-child {
-    margin-bottom: .8em;
-}
-
 .nav ul li ul li h6 {
     text-indent: 15%;
 }
@@ -373,16 +368,16 @@ a:hover {
 
 @media only screen and (max-width: 800px) {
   .nav ul li h5 {
-       font-size: 27px;
+       font-size: 20px;
   }
   #banner-title h2 {
-       font-size: 44px;
+       font-size: 36px;
   }
   h4 {
-       font-size: 25px;
+       font-size: 18px;
   }
   p {
-    font-size: 18px;
+    font-size: 14x;
   }
 }
 
