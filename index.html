@@ -1,38 +1,65 @@
----
-layout: index
-title: "Randomer Forest"
-order : 0
-description: "Randomer Forest"
----
-{% include JB/setup %}
-<div id="banner-container">
-  <div class = "container">
-    <div class = "content">
-      <div id="banner-title">
-        <h2> Randomer Forest </h2>
-      </div>
-      <div class = "row cont_row">
-        <div class = "cont_details">
-          <div class="detail">
-              <h4><i class="fa fa-flag"></i> A robust ensemble method</h4>
-              <p>Randomer Forest combines sparse random projections with the random forest algorithm to acheive high accuracy on a variety of datasets.
-              </p>
-          </div>
-          <div class="detail">
-              <h4><i class="fa fa-cube"></i> An easy-to-use package</h4>
-              <p>Currently available for R and coming soon to Python, Lumberjack is supported on Windows, Linux, and Mac OS.
-              </p>
-          </div>
-          <div class="detail">
-              <h4><i class="fa fa-wrench"></i> A scalable solution </h4>
-              <p>Randomer Forest is optimized for both speed and memory performance through native implementation and multicore parallelization.
-              </p>
-          </div>
-          <p>
-            <a href="https://github.com/neurodata/RerF" class="button" id="banner-btn">GET RANDOMER FOREST</a>
-          </p>
-        </div>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Randomer Forest</title>
+  <meta name="description" content="Randomer Forest">
+  <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      <a href="index.html">
+        <h4>
+          Randomer Forest
+        </h4>
+      </a>
+    </div>
+
+    <div class="links">
+      <a href="https://neurodata.io/" target="_blank">
+        <h5 class="view-text">NeuroData</h5>
+        <img class="view-logo" src="assets/images/neurodata_logo.png">
+      </a>
+      <a href="https://github.com/neurodata/RerF" target="_blank">
+        <h5 class="view-text">GitHub</h5>
+        <img class="view-logo" src="assets/images/github.png">
+      </a>
     </div>
   </div>
-</div>
+
+  <div class="main">
+    <a href="https://github.com/neurodata/RerF">
+      <h2>
+        Randomer Forest
+      </h2>
+    </a>
+    <div class="content">
+      <div class="detail">
+        <h4>A robust ensemble method</h4>
+        <p>Randomer Forest combines sparse random projections with the random forest algorithm to achieve high
+          accuracy on a variety of datasets.
+        </p>
+      </div>
+      <div class="detail">
+        <h4>An easy-to-use package</h4>
+        <p>Currently available for R and Python, Randomer Forest is supported on Windows, Linux, and Mac OS.
+        </p>
+      </div>
+      <div class="detail">
+        <h4>A scalable solution</h4>
+        <p>Randomer Forest is optimized for both speed and memory performance through native implementation and
+          multicore parallelization.
+        </p>
+      </div>
+      <p>
+        <a href="https://github.com/neurodata/RerF" class="button" id="banner-btn">GET RANDOMER FOREST</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

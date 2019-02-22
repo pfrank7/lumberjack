@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gentona Book';
+    src: url("assets/fonts/Gentona-Book.eot");
+    src: local("☺"), url("assets/fonts/Gentona-Book.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-Book.woff") format("woff"), url("assets/fonts/Gentona-Book.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona';
+    src: url("assets/fonts/Gentona-Light.eot");
+    src: local("☺"), url("assets/fonts/Gentona-Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-Light.woff") format("woff"), url("assets/fonts/Gentona-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Italic';
+    src: url("assets/fonts/Gentona-MediumItalic.eot");
+    src: local("☺"), url("assets/fonts/Gentona-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-MediumItalic.woff") format("woff"), url("assets/fonts/Gentona-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Book Italic';
+    src: url("assets/fonts/Gentona-BookItalic.eot");
+    src: local("☺"), url("assets/fonts/Gentona-BookItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-BookItalic.woff") format("woff"), url("assets/fonts/Gentona-BookItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Bold';
+    src: url("assets/fonts/Gentona-Bold.eot");
+    src: local("☺"), url("assets/fonts/Gentona-Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-Bold.woff") format("woff"), url("assets/fonts/Gentona-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gentona Bold Italic';
+    src: url("assets/fonts/Gentona-BookItalic.eot");
+    src: local("☺"), url("assets/fonts/Gentona-BoldItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Gentona-BoldItalic.woff") format("woff"), url("assets/fonts/Gentona-BoldItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Regular';
+    src: url("assets/fonts/Quadon-Regular.eot");
+    src: local("☺"), url("assets/fonts/Quadon-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Quadon-Regular.woff") format("woff"), url("assets/fonts/Quadon-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Regular Italic';
+    src: url("assets/fonts/Quadon-RegularItalic.eot");
+    src: local("☺"), url("assets/fonts/Quadon-RegularItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Quadon-RegularItalic.woff") format("woff"), url("assets/fonts/Quadon-RegularItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Medium';
+    src: url("assets/fonts/Quadon-Medium.eot");
+    src: local("☺"), url("assets/fonts/Quadon-Medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Quadon-Medium.woff") format("woff"), url("assets/fonts/Quadon-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadon Medium Italic';
+    src: url("assets/fonts/Quadon-MediumItalic.eot");
+    src: local("☺"), url("assets/fonts/Quadon-MediumItalic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Quadon-MediumItalic.woff") format("woff"), url("assets/fonts/Quadon-MediumItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    font: 16px/1.5 "Gentona", "Arial", sans-serif;
+    color: white;
+    background-color: #29282e;
+    -moz-osx-font-smoothing: antialiased !important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal !important;
+    text-transform: uppercase;
+}
+
+h1,
+h3 {
+    font-family: "Quadon Medium", "Rockwell Bold", serif;
+}
+
+h2 {
+    font-family: "Quadon Regular", Rockwell, serif;
+}
+
+h4,
+h5,
+h6 {
+    font-family: "Gentona Bold", "Arial Bold", sans-serif;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 29px;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #318dde;
+    margin: 0;
+}
+
+h5 {
+    font-size: 16px;
+    color: white;
+    background-color: #000;
+    padding: 17px 14px;
+    margin: 0;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: normal !important;
+    margin: 0;
+}
+
+a:link,
+a:visited {
+    color: #318dde;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+a {
+    transition: color 350ms ease, background-color 350ms ease, border-color 350ms ease;
+}
+
+/* Top NAV */
+.nav {
+    top: 0;
+    background: #f4f4f4;
+    width: 100%;
+    position: sticky;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* randomer forest logo/link */
+
+.nav a h4:hover {
+    color: #318dde;
+}
+
+.nav h4 {
+    display: inline-block;
+    color: #144b7c;
+    transition: 0.3s ease all;
+    font-size: 30px;
+    line-height: 1;
+}
+
+/* Links */
+
+.links {
+    position: absolute;
+    padding-left: 1.5rem;
+    right: 1.5rem;
+    height: 70px;
+    line-height: 70px;
+}
+
+.links h5 {
+    display: inline-block;
+    background: none;
+    color: #222;
+    font-size: 25px;
+    transition: 0.3s ease all;
+    padding: 0 14px;
+}
+
+.links h5:hover {
+    color: #318dde;
+}
+
+.links img {
+    padding-left: 10px;
+    height: 40%;
+    vertical-align: middle;
+}
+
+/* Main content */
+
+.main {
+    width: 100%;
+    padding: 10px 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.main h2 {
+    text-align: center;
+    margin: 1rem;
+    color: #f4f4f4;
+    transition: color 350ms ease, background-color 350ms ease, border-color 350ms ease;
+}
+
+.main h2:hover {
+    color: #318dde;
+}
+
+.content {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.content p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.content h4 {
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.detail {
+    font-family: "Gentona", Rockwell, serif;
+}
+
+.detail p {
+    margin: 2.5%;
+    text-align: justify;
+}
+
+/************** Button formatting ************/
+p a:link:not(.button),
+p a:visited:not(.button) {
+    border-bottom: 1px solid #318dde;
+}
+
+p a:hover:not(.button) {
+    border-color: transparent;
+}
+
+a.button {
+    display: inline-block;
+    height: auto;
+    font: 25px/44px "Gentona Bold", "Arial Bold", sans-serif;
+    color: #020202;
+    background-color: #99B4C6;
+    border: 2px solid #99B4C6;
+    border-radius: 24px;
+    padding: 0 24px;
+    cursor: pointer;
+}
+
+a.button:hover,
+input[type="submit"]:hover {
+    color: #020202;
+    background-color: white;
+    border-color: white;
+}
+
+.view-logo {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .links h5.view-text {
+        display: none;
+    }
+
+    .links img.view-logo {
+        display: inline-block;
+    }
+}

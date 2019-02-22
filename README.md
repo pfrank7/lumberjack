@@ -1,1 +1,1 @@
-# Randomer Forests Project Homepage
+# Randomer Forests Homepage
