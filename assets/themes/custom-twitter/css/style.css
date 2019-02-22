@@ -382,6 +382,9 @@ a:hover {
   a.button {
       font-size: 18px;
   }
+  .cont_details {
+      padding: 0px;
+  }
 }
 
 
