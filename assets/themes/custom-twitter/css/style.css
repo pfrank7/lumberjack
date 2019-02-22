@@ -379,8 +379,8 @@ a:hover {
   h4 {
        padding: 11px 5px;
   }
-  p {
-    font-size: 10x;
+  .content p {
+    font-size: 12px;
   }
 }
 
