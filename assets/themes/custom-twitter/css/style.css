@@ -240,9 +240,10 @@ a {
 }
 
 .nav ul li h5 {
+    display: inline-block;
     background: none;
     color: #144b7c;
-    padding: 20px 0px 13px 22px;
+    /*padding: 20px 0px 13px 22px;*/
     font-size: 25px;
     transition: 0.3s ease all;
 }
