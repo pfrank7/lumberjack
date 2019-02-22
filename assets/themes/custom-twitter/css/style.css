@@ -365,13 +365,14 @@ a:hover {
   }
   #banner-title h2 {
       font-size: 25px;
-      margin-bottom:0px
+      margin-bottom:0px;
+      margin-top: 90px;
   }
   h4 {
       font-size: 18px;
   }
   h4 {
-      padding: 11px 5px;
+      padding: 5px 5px;
   }
   .content p {
       font-size: 12px;
