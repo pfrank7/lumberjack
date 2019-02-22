@@ -362,13 +362,3 @@ a:hover {
 .view-logo {
     display: none;
 }
-
-@media only screen and (max-width: 600px) {
-    .links h5.view-text {
-        display: none;
-    }
-
-    .links img.view-logo {
-        display: inline-block;
-    }
-}
